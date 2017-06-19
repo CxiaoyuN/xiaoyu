@@ -57,6 +57,7 @@ echo -e "\033[0;1;35m                 14.小羽SS-panel v2魔改版（有问题�
 
 #echo
 echo -e "\033[0;1;36m               小工具搭建脚本:                                                 \033[0m"
+echo -e "\033[0;1;35m                  16.小羽博雅DALO                              【7.x系统】     \033[0m"
 echo -e "\033[0;1;31m                  17.小羽锐速一键安装脚本（加速）              【6-7.x系统】     \033[0m"
 echo -e "\033[0;1;31m                  18.小羽锐速卸载                              【6-7.x系统】     \033[0m"
 echo -e "\033[0;1;31m                  19.小羽BBR加速一键安装包（加速）             【6-7.x系统】     \033[0m"
@@ -194,6 +195,15 @@ then
 echo -e "安装类型：\033[36m小羽SS-panel v2魔改版\033[0m" ; 
 wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyussr/raw/master/SSV2.sh >/dev/null 2>&1
 bash SSV2.sh
+fi
+
+
+if [[ $mode == "16" ]] 
+then
+echo -e "安装类型：\033[36m小羽博雅DALO\033[0m" ; 
+wget -N --no-check-certificate https://github.com/CxiaoyuN/BY/raw/master/XYBY >/dev/null 2>&1、
+chmod 777 XYBY
+bash XYBY
 fi
 
 
