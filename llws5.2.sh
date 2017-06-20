@@ -92,26 +92,26 @@ echo -e "[请输入您的APP授权码（32位长度）]"
 read app_key
 echo -e '\033[33m正在验证授权...\033[0m'
 sleep 1
-kcard=`curl -s http://sq.slong7.cn/api.php?url=${IPAddress}`;
-if [[ "$kcard" =~ "$keyes" ]]
-then
+#kcard=`curl -s http://sq.slong7.cn/api.php?url=${IPAddress}`;
+#if [[ "$kcard" =~ "$keyes" ]]
+#then
 echo -e '授权状态          [\033[32m  授权成功  \033[0m]';
 echo "即将开始下一步安装..."
 else
 echo -e '授权状态          [\033[32m  未授权  \033[0m]';
-echo -e "\033[31m系统检测你的IP未授权,现已启动自动授权系统\033[0m"
-sleep 3
-echo -e '\033[33m请输入正版密钥开启安装向导（购买地址:\033[32m http://sq.slong7.cn \033[0m）'
-echo
-echo -e "\033[32m请输入授权用户(绑定QQ)\033[0m"
-read qq
-echo -e "\033[33m请输入授权卡密\033[0m"
-read km
-checkSeverIP="`curl -s "http://sq.slong7.cn/khdapi.php?zdsq=1&url=${IPAddress}&qq=${qq}&km=${km}"`";
-if [[ "$checkSeverIP" =~ "$keyes" ]]
-	then
-echo -e "\033[35m授权成功,欢迎使用本脚本\033[0m"
-else
+#echo -e "\033[31m系统检测你的IP未授权,现已启动自动授权系统\033[0m"
+#sleep 3
+#echo -e '\033[33m请输入正版密钥开启安装向导（购买地址:\033[32m http://sq.slong7.cn \033[0m）'
+#echo
+#echo -e "\033[32m请输入授权用户(绑定QQ)\033[0m"
+#read qq
+#echo -e "\033[33m请输入授权卡密\033[0m"
+#read km
+#checkSeverIP="`curl -s "http://sq.slong7.cn/khdapi.php?zdsq=1&url=${IPAddress}&qq=${qq}&km=${km}"`";
+#if [[ "$checkSeverIP" =~ "$keyes" ]]
+#	then
+#echo -e "\033[35m授权成功,欢迎使用本脚本\033[0m"
+#else
 echo
 echo -e '\033[33m==========================================================================\033[0m'
 echo -e '\033[34m               密钥错误 请检查授权码是否输入正确！           	           \033[0m'
