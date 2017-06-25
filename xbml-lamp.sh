@@ -20,7 +20,7 @@ yum install -y php-mysql php-gd libjpeg* php-ldap php-odbc php-pear php-xml php-
 systemctl restart mariadb.service >/dev/null 2>&1 
 systemctl restart httpd.service >/dev/null 2>&1
 myi=`wget http://sq.xbaicai.net/a.php?url=$IP -O - -q;`
-if [[ $myi =~ 1 ]];
+if [[ $myi =~ 0 ]];
 then
 echo			
 else
