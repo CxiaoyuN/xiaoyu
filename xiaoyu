@@ -9,11 +9,27 @@ chattr -a /root
 chattr -a /tmp 
 chattr -a /etc 
 chattr -a /usr/bin 
+key='小羽';
 # ********************************** 脚本开始 **************************** #
 IP=`wget http://www.sbwml.cn/getip -O - -q ; echo`;
 # LOGO ********************************************************************
 # 广告通知 ****************************************************************
 echo
+echo -n -e "请输入验证码 [\033[32m $key \033[0m] ："
+read PASSWD
+readkey=$PASSWD
+if [[ ${readkey%%\ *} == $key ]]
+then
+echo 
+echo -e '\033[32m验证成功！\033[0m即将开始搭建...'
+sleep 1
+else
+echo
+echo -e '\033[31m验证失败 ，请重新尝试！  \033[0m'
+sleep 1
+echo "$keyerrorlogo";
+exit
+fi
 echo "正在检测您的IP是否正确加载..."
 
 	if [[ "$IP" == '' ]]; then
