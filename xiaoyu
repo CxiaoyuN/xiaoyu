@@ -347,7 +347,10 @@ fi
 if [[ $mode == "26" ]] 
 then
 echo -e "安装类型：\033[36mlnmp1.4一键安装脚本\033[0m" ; 
-wget https://github.com/CxiaoyuN/xiaoyu/raw/master/lnmp1.4.tar.gz && tar zxf lnmp1.4.tar.gz && cd lnmp1.4 && ./install.sh lnmp >/dev/null 2>&1
+wget https://github.com/CxiaoyuN/xiaoyu/raw/master/lnmp1.4.tar.gz >/dev/null 2>&1
+tar zxf lnmp1.4.tar.gz
+cd lnmp1.4
+./install.sh lnmp 
 fi
 
 
