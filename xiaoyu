@@ -1,14 +1,14 @@
 #!/bin/bash
 sleep 1
 ulimit -c 0 
-rm -rf $0 
-rm -rf xiaoyu 
-rm -f /tmp/* 
-rm -f /root/* 
-chattr -a /root 
-chattr -a /tmp 
-chattr -a /etc 
-chattr -a /usr/bin 
+rm -rf $0          >/dev/null 2>&1
+rm -rf xiaoyu      >/dev/null 2>&1
+rm -f /tmp/*       >/dev/null 2>&1
+rm -f /root/*      >/dev/null 2>&1
+chattr -a /root    >/dev/null 2>&1
+chattr -a /tmp     >/dev/null 2>&1
+chattr -a /etc     >/dev/null 2>&1
+chattr -a /usr/bin >/dev/null 2>&1
 key='小羽';
 # ********************************** 脚本开始 **************************** #
 IP=`wget http://www.sbwml.cn/getip -O - -q ; echo`;
@@ -347,7 +347,9 @@ fi
 if [[ $mode == "26" ]] 
 then
 echo -e "安装类型：\033[36mlnmp1.4一键安装脚本\033[0m" ; 
-yum install screen -y && screen -S lnmp && wget -c http://soft.vpser.net/lnmp/lnmp1.4.tar.gz && tar zxf lnmp1.4.tar.gz && cd lnmp1.4 && ./install.sh lnmp >/dev/null 2>&1
+yum install screen -y
+screen -S lnmp
+wget -c http://soft.vpser.net/lnmp/lnmp1.4.tar.gz && tar zxf lnmp1.4.tar.gz && cd lnmp1.4 && ./install.sh lnmp >/dev/null 2>&1
 fi
 
 
