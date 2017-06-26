@@ -219,9 +219,9 @@ fi
 if [[ $mode == "14" ]] 
 then
 echo -e "安装类型：\033[36m小羽SS-panel v2魔改版\033[0m" ; 
-wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyussr/raw/master/SSV2.sh >/dev/null 2>&1
-chmod 777 SSV2.sh
-bash SSV2.sh
+wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyussr/raw/master/SSRV2.sh >/dev/null 2>&1
+chmod 777 SSRV2.sh
+bash SSRV2.sh
 fi
 
 
