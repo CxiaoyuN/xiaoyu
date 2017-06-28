@@ -135,8 +135,8 @@ if [[ $mode == "3" ]]
 then
 echo -e "安装类型：\033[36m小羽SSR多功能版脚本说明: ShadowsocksR 一键安装/管理脚本，支持单端口/多端口切换和管理，系统支持: CentOS6+ / Debian6+ / Ubuntu14+\033[0m" ;  
 wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh >/dev/null 2>&1
-chmod 777 SSRD.sh
-bash SSRD.sh
+chmod 777 ssr.sh
+bash ssr.sh
 fi
 
 
