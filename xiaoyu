@@ -135,11 +135,27 @@ fi
 
 
 if [[ $mode == "3" ]] 
-then
-echo -e "安装类型：\033[36m小羽SSR多功能版脚本说明: ShadowsocksR 一键安装/管理脚本，支持单端口/多端口切换和管理，系统支持: CentOS6+ / Debian6+ / Ubuntu14+\033[0m" ;  
-wget -N --no-check-certificate https://raw.githubusercontent.com/CxiaoyuN/xiaoyussr/master/doubssr.sh >/dev/null 2>&1
-chmod 777 doubssr.sh
-bash doubssr.sh
+    then
+    echo -e "安装类型：\033[36m小羽SSR多功能版脚本说明: ShadowsocksR 一键安装/管理脚本，支持单端口/多端口切换和管理\033[0m" ; 
+	echo -n -e "请确认使用\033[32m 小羽SSR多功能版脚本有二维码 \033[0m还是\033[31m 小羽SSR多功能版脚本无二维码 \033[0m[D/X]，(默认D)： "
+  read yuan
+  if [[ $yuan == "D" ]]
+  then
+  echo
+  echo -e "安装类型：\033[32m 小羽SSR多功能版脚本（二维码） \033[0m" ;
+  echo "已选择极速免编译安装方式"
+  wget -N --no-check-certificate https://raw.githubusercontent.com/CxiaoyuN/xiaoyussr/master/doubssr.sh >/dev/null 2>&1
+  chmod 777 doubssr.sh
+  bash doubssr.sh
+  fi
+  if [[ $yuan == "X" ]]
+  then
+  echo -e "安装类型：\033[32m 小羽SSR多功能版脚本（无二维码） \033[0m" ;
+  echo "已选择编译安装方式"
+  wget -N --no-check-certificate https://raw.githubusercontent.com/CxiaoyuN/xiaoyussr/master/xydoubssr.sh >/dev/null 2>&1
+  chmod 777 xydoubssr.sh
+  bash xydoubssr.sh
+  fi
 fi
 
 
