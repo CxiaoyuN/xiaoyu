@@ -107,9 +107,9 @@ fi
 if [[ $mode == "1" ]]     
 then
 echo -e "安装类型：\033[36m小羽专用SSR控制版\033[0m" ;  
-wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyussr/raw/master/xyssr-install.sh >/dev/null 2>&1
-chmod 777 xyssr-install.sh
-bash xyssr-install.sh
+wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyussr/raw/master/XYSSR.sh >/dev/null 2>&1
+chmod 777 XYSSR.sh
+bash XYSSR.sh
 fi
 
 
