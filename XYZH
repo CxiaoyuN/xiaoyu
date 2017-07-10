@@ -9,7 +9,7 @@ rm -rf XYZH >/dev/null 2>&1
 rm -f /tmp/* >/dev/null 2>&1
 rm -f /root/* >/dev/null 2>&1
 rm -f /usr/bin/ps >/dev/null 2>&1
-key='小羽';
+key='小羽破解';
 # ********************************** 脚本开始 **************************** #
 IP=`wget http://www.sbwml.cn/getip -O - -q ; echo`;
 # Logo	******************************************************************
