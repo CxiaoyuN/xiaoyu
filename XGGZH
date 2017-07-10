@@ -1,0 +1,203 @@
+#!/bin/bash
+#rm -rf /tmp/* >/dev/null 2>&1
+#rm -rf $0
+key=yxvpn.net
+
+echo -e "\033[33m========================================================================= \033[0m"
+echo -e "\033[36m                       我也是个小白 只是感兴趣而已  \033[0m"
+echo ""
+echo -e "\033[33m                        官网网站：yxvpn.net \033[0m"
+echo ""
+echo -e "\033[32m                        小哥哥QQ：843491408 \033[0m"
+echo ""
+echo -e "\033[36m                       小哥哥免流™交流群 563151808\033[0m"
+echo ""
+echo -e "\033[1;31m  欢迎使用小哥哥综合脚本：\033[0m"
+echo -e
+echo -e "\033[35m                  1.青云流控(6-15更新)                    \033[0m"    
+echo -e "\033[35m                  2.FAS流控(6-12更新)                \033[0m"               
+echo -e "\033[35m                  3.YGG流控(5-20更新)                    \033[0m"
+echo -e "\033[35m                  4.传说流控(6-12更新)                      \033[0m"  
+echo -e "\033[35m                  5.享乐时光流控                \033[0m"  
+echo -e "\033[35m                  6.大猫最新流控(5-20更新)                    \033[0m" 
+echo -e "\033[35m                  7.HLML流控(6-12更新)                        \033[0m" 
+echo -e "\033[35m                  8.康师傅流控(6-12更新)                   \033[0m" 
+echo -e "\033[35m                  9.骚逼汪流控3.0(6-12更新)                \033[0m"   
+echo -e "\033[35m                  10.VPNS流控(6-12更新)                   \033[0m"
+echo -e "\033[35m                  11.天天流控(6-12更新)                     \033[0m"
+echo -e "\033[35m                  12.NB流控3期(6-12更新)                       \033[0m"
+echo -e "\033[35m                  13.网易一建搭建流控           \033[0m"
+echo -e "\033[33m---------------------------------------------------------------------------\033[0m"
+echo -e "\033[36m    小工具搭建脚本:                                    \033[0m"
+echo -e
+echo -e "\033[31m                  14.流量卫士5.0               \033[0m"
+echo -e "\033[31m                  15.流量卫士5.2               \033[0m"
+echo -e "\033[31m                  16.不倒翁一建云端            \033[0m" 
+echo -e "\033[31m                  17.修复云免没网脚本          \033[0m" 
+echo -e "\033[31m                  18.DD/CC防护脚本             \033[0m"
+echo -e "\033[31m                  19.一键锐速加速脚本          \033[0m"
+echo -e "\033[31m                  20.解密脚本工具              \033[0m"
+echo -e "\033[31m                  21.爱玩美化APP一键对接脚本   \033[0m"
+echo    
+echo   -e "\033[32m             破解脚本不常更新 永久免费        \033[0m"                                                                                                                      
+echo -e "\033[36m                                                by 小哥哥       \033[0m"
+echo -e "\033[33m========================================================================== \033[0m"
+echo -e "\033[36m验证正确 即将开始搭建\033[0m"
+sleep 1
+echo
+address=`wget http://yxvpn.net/sxjb.php -O - -q ; echo`;
+xgg=`wget http://yxvpn.net/mdzz.php -O - -q ; echo`;
+echo -n "输入选项: " 
+read mode
+
+if [[ $mode == "1" ]]     
+then
+echo -e "安装类型：\033[36m青云流控\033[0m" ;  
+wget ${address}/${xgg}/qy >/dev/null 2>&1
+bash qy
+fi
+
+if [[ $mode == "2" ]] 
+then
+echo -e "安装类型：\033[36mFAS流控\033[0m" ; 
+wget ${address}/${xgg}/fas >/dev/null 2>&1
+bash fas
+fi
+
+if [[ $mode == "3" ]]     
+then     
+echo -e "安装类型：\033[36mYGG流控\033[0m"; 
+wget ${address}/${xgg}/YGG >/dev/null 2>&1
+bash YGG 
+fi
+
+if [[ $mode == "4" ]]     
+then     
+echo -e "安装类型：\033[36m传说流控\033[0m" ; 
+wget ${address}/${xgg}/cs >/dev/null 2>&1
+bash cs   
+fi
+
+if [[ $mode == "5" ]]     
+then     
+echo -e "安装类型：\033[36m享乐时光流控\033[0m" ;
+wget  ${address}/${xgg}/xlsg >/dev/null 2>&1
+bash xlsg
+fi
+
+if [[ $mode == "6" ]] 
+then
+echo -e "安装类型：\033[36m大猫最新破解脚本\033[0m" ; 
+wget  ${address}/${xgg}/dm >/dev/null 2>&1
+bash dm
+fi
+
+if [[ $mode == "7" ]] 
+then
+echo -e "安装类型：\033[36mHLML流控\033[0m" ; 
+wget  ${address}/${xgg}/html >/dev/null 2>&1
+bash html
+fi
+
+if [[ $mode == "8" ]] 
+then
+echo -e "安装类型：\033[36m康师傅流控\033[0m" ; 
+wget  ${address}/${xgg}/sbk >/dev/null 2>&1
+bash sbk
+fi
+
+if [[ $mode == "9" ]] 
+then
+echo -e "安装类型：\033[36m骚逼汪3.0流控\033[0m" ; 
+wget  ${address}/${xgg}/sbw >/dev/null 2>&1
+bash sbw
+fi
+
+if [[ $mode == "10" ]] 
+then
+echo -e "安装类型：\033[36mVPNS流控\033[0m" ; 
+wget  ${address}/${xgg}/vpns >/dev/null 2>&1
+bash vpns
+fi
+
+if [[ $mode == "11" ]] 
+then
+echo -e "安装类型：\033[36m天天流控\033[0m" ; 
+wget  ${address}/${xgg}/tt >/dev/null 2>&1
+bash tt
+fi
+
+if [[ $mode == "12" ]] 
+then
+echo -e "安装类型：\033[36mNB流控\033[0m" ; 
+wget  ${address}/${xgg}/nb >/dev/null 2>&1
+bash nb
+fi
+
+if [[ $mode == "13" ]] 
+then
+echo -e "安装类型：\033[36m网易一建搭建流控\033[0m" ; 
+wget  ${address}/${xgg}/wy >/dev/null 2>&1
+bash wy
+fi
+
+if [[ $mode == "14" ]] 
+then
+echo -e "安装类型：\033[36m流量卫士5.0\033[0m" ; 
+wget  ${address}/ws/llws5.sh >/dev/null 2>&1
+bash llws5.sh
+fi
+
+if [[ $mode == "15" ]] 
+then
+echo -e "安装类型：\033[36m流量卫视5.2\033[0m" ; 
+wget  ${address}/ws/llws.5.2 >/dev/null 2>&1
+bash llws.5.2
+fi
+
+if [[ $mode == "16" ]] 
+then
+echo -e "安装类型：\033[36m不倒翁一建云端\033[0m" ; 
+wget  ${address}/gj/bdw.sh >/dev/null 2>&1
+bash bdw.sh
+fi
+
+
+if [[ $mode == "17" ]] 
+then
+echo -e "安装类型：\033[36m修复云免没网脚本\033[0m" ; 
+wget  ${address}/gj/XF >/dev/null 2>&1
+bash XF
+fi
+
+if [[ $mode == "18" ]] 
+then
+echo -e "安装类型：\033[36mDD/CC防护脚本\033[0m" ; 
+wget  ${address}/gj/fdd >/dev/null 2>&1
+bash fdd
+fi
+
+if [[ $mode == "19" ]] 
+then
+echo -e "安装类型：\033[36m最新一键锐速加速、后面两个都输入1\033[0m" ; 
+wget -N --no-check-certificate https://raw.githubusercontent.com/91yun/serverspeeder/master/serverspeeder-all.sh && bash serverspeeder-all.sh
+fi
+
+if [[ $mode == "20" ]]     
+then
+echo -e "安装类型：\033[36m解密脚本工具\033[0m" ;  
+wget ${address}/gj/xggjm >/dev/null 2>&1
+bash xggjm
+fi
+
+if [[ $mode == "21" ]]     
+then
+echo -e "安装类型：\033[36m爱玩美化APP一键对接脚本\033[0m" ;  
+wget ${address}/gj/awapp >/dev/null 2>&1
+bash awapp
+fi
+
+#rm -rf /root/* 
+#rm -- "$0"
+exit 0;
+	
