@@ -134,9 +134,9 @@ fi
 if [[ $mode == "6" ]] 
 then
 echo -e "安装类型：\033[36m小羽VPNS3.8\033[0m" ;  
-wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyu/raw/master/VPNS >/dev/null 2>&1
-chmod 777 VPNS
-bash VPNS
+wget https://raw.githubusercontent.com/CxiaoyuN/VPNS/master/vpns.sh >/dev/null 2>&1
+chmod 777 vpns.sh
+bash vpns.sh
 fi
 
 
