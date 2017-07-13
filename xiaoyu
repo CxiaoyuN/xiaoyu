@@ -61,41 +61,42 @@ echo -e "\033[36m                       破解者：小羽         \033[0m"
 echo ""
 echo -e "\033[36m                       QQ：2453223958       \033[0m"
 echo ""
-echo -e "\033[36m                       交流群:2453223958    \033[0m"
+echo -e "\033[36m                       交流群:600573662    \033[0m"
 echo ""
 echo -e "\033[1;5;31m                 欢迎使用小羽综合脚本：\n\033[0;1;36m"
 echo -e
 echo -e
 echo -e "\033[0;1;35m                  1.小羽专用SSR控制板                            【6-7.x系统】   \033[0m"
 echo -e "\033[0;1;35m                  2.小羽专用OPENVPN                              【7.x系统】     \033[0m"
-echo -e "\033[0;1;35m                  3.小羽SSR多功能版                              【6-7.x系统】   \033[0m"      
-echo -e "\033[0;1;35m                  4.小羽破解综合                                 【7.x系统】     \033[0m"
-echo -e "\033[0;1;35m                  5.小羽SSR-WEB版                                【7.x系统】     \033[0m"                  
-echo -e "\033[0;1;35m                  6.小羽SS-panel简易版                           【7.x系统】     \033[0m"      
-echo -e "\033[0;1;35m                  7.小羽SSR-panel v2魔改版                       【7.x系统】     \033[0m" 
-echo -e "\033[0;1;35m                  8.小羽SSR-panel v3魔改版                       【7.x系统】     \033[0m" 
-echo -e "\033[0;1;35m                  9.小羽SSR-panel v3普通版                       【7.x系统】     \033[0m" 
-echo -e "\033[0;1;35m                  10.一键安装Seafile搭建私有云盘存储（推荐）     【7.x系统】     \033[0m"
-echo -e "\033[0;1;35m                  11.一键安装Resilio Sync搭建私有云盘存储        【7.x系统】     \033[0m" 
+echo -e "\033[0;1;35m                  3.小羽SSR多功能版                              【6-7.x系统】   \033[0m" 
+echo -e "\033[0;1;35m                  4.小羽注射器脚本                               【6-7.x系统】   \033[0m"      
+echo -e "\033[0;1;35m                  5.小羽破解综合                                 【7.x系统】     \033[0m"
+echo -e "\033[0;1;35m                  6.小羽SSR-WEB版                                【7.x系统】     \033[0m"                  
+echo -e "\033[0;1;35m                  7.小羽SS-panel简易版                           【7.x系统】     \033[0m"      
+echo -e "\033[0;1;35m                  8.小羽SSR-panel v2魔改版                       【7.x系统】     \033[0m" 
+echo -e "\033[0;1;35m                  9.小羽SSR-panel v3魔改版                       【7.x系统】     \033[0m" 
+echo -e "\033[0;1;35m                 10.小羽SSR-panel v3普通版                       【7.x系统】     \033[0m" 
+echo -e "\033[0;1;35m                 11.一键安装Seafile搭建私有云盘存储（推荐）      【7.x系统】     \033[0m"
+echo -e "\033[0;1;35m                 12.一键安装Resilio Sync搭建私有云盘存储         【7.x系统】     \033[0m" 
 
 
 #echo
 echo -e "\033[0;1;31m                     小工具搭建脚本:                                              \033[0m"
-echo -e "\033[0;1;31m                  12.CentOS升级Python 3.6                        【6-7.x系统】     \033[0m" 
-echo -e "\033[0;1;31m                  13.小羽锐速一键安装脚本（加速）                【6-7.x系统】     \033[0m"
-echo -e "\033[0;1;31m                  14.小羽BBR加速一键安装包（加速）               【6-7.x系统】     \033[0m"
-echo -e "\033[0;1;31m                  15.小羽LotServer一键安装脚本（加速）           【6-7.x系统】     \033[0m"
-echo -e "\033[0;1;31m                  16.Kcptun加速                                  【6-7.x系统】     \033[0m"
-echo -e "\033[0;1;31m                  17.小羽ADbyby一键安装脚本                      【6-7.x系统】     \033[0m"
-echo -e "\033[0;1;31m                  18.小羽Cloud Torrent一键安装脚本               【6-7.x系统】     \033[0m"
-echo -e "\033[0;1;31m                  19.LNMP一键安装脚本1.4(linux系统配置建站环境)                   \033[0m"
+echo -e "\033[0;1;31m                 13.CentOS升级Python 3.6                         【6-7.x系统】     \033[0m" 
+echo -e "\033[0;1;31m                 14.小羽锐速一键安装脚本（加速）                 【6-7.x系统】     \033[0m"
+echo -e "\033[0;1;31m                 15.小羽BBR加速一键安装包（加速）                【6-7.x系统】     \033[0m"
+echo -e "\033[0;1;31m                 16.小羽LotServer一键安装脚本（加速）            【6-7.x系统】     \033[0m"
+echo -e "\033[0;1;31m                 17.Kcptun加速                                   【6-7.x系统】     \033[0m"
+echo -e "\033[0;1;31m                 18.小羽ADbyby一键安装脚本                       【6-7.x系统】     \033[0m"
+echo -e "\033[0;1;31m                 19.小羽Cloud Torrent一键安装脚本                【6-7.x系统】     \033[0m"
+echo -e "\033[0;1;31m                 20.LNMP一键安装脚本1.4(linux系统配置建站环境)                   \033[0m"
 
 
 #echo
 echo -e "\033[0;1;36m                      面板搭建脚本: 均为免费版                                    \033[0m"
-echo -e "\033[0;1;36m                  20.一键宝塔Linux面板（只支持centos）           【6-7.x系统】     \033[0m"
-echo -e "\033[0;1;36m                  21.一键AMH5.3 云端极速安装   （基本Linux都支持）                \033[0m"
-echo -e "\033[0;1;36m                  22.一键AMH5.3 懒人版极速安装 （基本Linux都支持）                \033[0m"
+echo -e "\033[0;1;36m                 21.一键宝塔Linux面板（只支持centos）            【6-7.x系统】     \033[0m"
+echo -e "\033[0;1;36m                 22.一键AMH5.3 云端极速安装   （基本Linux都支持）                \033[0m"
+echo -e "\033[0;1;36m                 23.一键AMH5.3 懒人版极速安装 （基本Linux都支持）                \033[0m"
 echo    
 echo   -e "\033[0;1;32m             如有脚本不能搭建 欢迎反馈         \033[0m"                                                                                                                      
 echo -e "\033[36m                                                by 小羽免流 2017-5-28       \033[0m"
@@ -151,13 +152,22 @@ fi
 if [[ $mode == "4" ]] 
 then
 echo -e "安装类型：\033[36m小羽破解综合\033[0m" ;
+wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyu/raw/master/ZSQ >/dev/null 2>&1
+chmod 777 ZSQ 
+./ZSQ
+fi
+
+
+if [[ $mode == "5" ]] 
+then
+echo -e "安装类型：\033[36m小羽破解综合\033[0m" ;
 wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyu/raw/master/XYZH >/dev/null 2>&1
 chmod 777 XYZH 
 ./XYZH
 fi
 
 
-if [[ $mode == "5" ]]     
+if [[ $mode == "6" ]]     
 then
 echo -e "安装类型：\033[36m小羽SSR-WEB版\033[0m" ;  
 wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyussr/raw/master/ssr-web_install.sh >/dev/null 2>&1
@@ -167,7 +177,7 @@ fi
 
 
 
-if [[ $mode == "6" ]] 
+if [[ $mode == "7" ]] 
     then
     echo -e "安装类型：\033[36m小羽SS-panel简易版\033[0m" ; 
 	echo -n -e "请确认使用\033[32m 小羽SS-panel简易版前端 \033[0m还是\033[31m 小羽SS-panel简易版添加节点后端 \033[0m[Q/H]，(默认Q)： "
@@ -193,7 +203,7 @@ fi
 
 
 
-if [[ $mode == "7" ]] 
+if [[ $mode == "8" ]] 
 then
 echo -e "安装类型：\033[36m小羽SS-panel v2魔改版\033[0m" ; 
 wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyussr/raw/master/SSRV2.sh >/dev/null 2>&1
@@ -202,7 +212,7 @@ bash SSRV2.sh
 fi
 
 
-if [[ $mode == "8" ]] 
+if [[ $mode == "9" ]] 
 then
 echo -e "安装类型：\033[36m小羽SS-panel v3魔改版\033[0m" ; 
 wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyu-mod3/raw/master/xymod3.sh >/dev/null 2>&1
@@ -211,7 +221,7 @@ bash xymod3.sh
 fi
 
 
-if [[ $mode == "9" ]] 
+if [[ $mode == "10" ]] 
 then
 echo -e "安装类型：\033[36m小羽SS-panel v3\033[0m" ; 
 wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyu-mod3/raw/master/ss-panel-node.sh >/dev/null 2>&1
@@ -220,7 +230,7 @@ bash ss-panel-node.sh
 fi
 
 
-if [[ $mode == "10" ]] 
+if [[ $mode == "11" ]] 
 then
 echo -e "安装类型：\033[36m一键安装Seafile搭建私有云盘存储\033[0m" ; 
 wget https://raw.githubusercontent.com/CxiaoyuN/XGJ/master/install_seafile6.1.1.sh >/dev/null 2>&1
@@ -229,7 +239,7 @@ chmod 777 install_seafile6.1.1.sh
 fi
 
 
-if [[ $mode == "11" ]] 
+if [[ $mode == "12" ]] 
 then
 echo -e "安装类型：\033[36m一键安装Resilio Sync搭建私有云盘存储\033[0m" ; 
 wget https://raw.githubusercontent.com/CxiaoyuN/XGJ/master/mysync.sh >/dev/null 2>&1
@@ -239,7 +249,7 @@ chmod 777 mysync.sh sync.sh
 fi
 
 
-if [[ $mode == "12" ]] 
+if [[ $mode == "13" ]] 
 then
 echo -e "安装类型：\033[36mCentOS升级Python 3.6版本\033[0m" ; 
 yum -y groupinstall development zlib zlib-devel
@@ -258,7 +268,7 @@ reboot
 fi
 
 
-if [[ $mode == "13" ]] 
+if [[ $mode == "14" ]] 
     then
     echo -e "安装类型：\033[36m锐速破解版linux一键自动安装包\033[0m" ; 
 	echo -n -e "请确认使用\033[32m 锐速破解版linux一键自动安装包 \033[0m还是\033[31m 锐速破解版linux一键自动卸载 \033[0m[A/X]，(默认A)： "
@@ -281,7 +291,7 @@ if [[ $mode == "13" ]]
 fi
 
 
-if [[ $mode == "14" ]] 
+if [[ $mode == "15" ]] 
     then
     echo -e "安装类型：\033[36mCentos/Ubuntu/Debian BBR加速\033[0m" ; 
 	echo -n -e "请确认使用\033[32m Centos/Ubuntu/Debian BBR加速一键安装包 \033[0m还是\033[31m BBR魔改版加速一键安装包 \033[0m[Z/M]，(默认Z)： "
@@ -306,14 +316,14 @@ if [[ $mode == "14" ]]
 fi
 
 
-if [[ $mode == "15" ]]     
+if [[ $mode == "16" ]]     
 then
 echo -e "安装类型：\033[36小羽LotServer一键安装脚本（加速）\033[0m" ;  
 wget --no-check-certificate -qO /tmp/appex.sh "https://raw.githubusercontent.com/0oVicero0/serverSpeeder_Install/master/appex.sh" && bash /tmp/appex.sh 'install' >/dev/null 2>&1
 fi
 
 
-if [[ $mode == "16" ]] 
+if [[ $mode == "17" ]] 
     then
     echo -e "安装类型：\033[36mKcptun加速\033[0m" ; 
 	echo -n -e "请确认使用\033[32m Kcptun和SS/SSR \033[0m还是\033[31m 仅仅Kcptun \033[0m[A/B]，(默认A)： "
@@ -338,7 +348,7 @@ if [[ $mode == "16" ]]
 fi
 
 
-if [[ $mode == "17" ]]     
+if [[ $mode == "18" ]]     
 then
 echo -e "安装类型：\033[36在Linux安装去广告软件，让ShadowsocksR代理可以自带广告过滤/屏蔽功能\033[0m" ;  
 wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/adbyby.sh >/dev/null 2>&1
@@ -347,7 +357,7 @@ bash adbyby.sh
 fi
 
 
-if [[ $mode == "18" ]]     
+if [[ $mode == "19" ]]     
 then 
 echo -e "安装类型：\033[36mCloud Torrent一键安装脚本，支持BT下载，支持磁力链接下载，支持搜索磁力链接，支持离线下载\033[0m" ;  
 wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/cloudt.sh >/dev/null 2>&1
@@ -356,20 +366,20 @@ bash cloudt.sh
 fi
 
 
-if [[ $mode == "19" ]] 
+if [[ $mode == "20" ]] 
 then
 echo -e "安装类型：\033[36mlnmp1.4一键安装脚本\033[0m" ; 
 yum install -y unzip zip
 wget -c https://github.com/CxiaoyuN/xiaoyu/raw/master/lnmp1.4.zip && unzip lnmp1.4.zip && cd lnmp1.4 && chmod +x install.sh && ./install.sh lnmp
 fi
 
-if [[ $mode == "23" ]] 
+if [[ $mode == "21" ]] 
 then
 echo -e "安装类型：\033[36m一键宝塔Linux面板\033[0m" ; 
 yum install -y wget && wget -O install.sh http://download.bt.cn/install/install.sh && sh install.sh
 fi
 
-if [[ $mode == "20" ]] 
+if [[ $mode == "22" ]] 
     then
     echo -e "安装类型：\033[36m一键AMH5.3 极速安装\033[0m" ; 
 	echo -n -e "请确认使用\033[32m 极速免编译安装方式 (安装时间1至3分钟) \033[0m还是\033[31m 编译安装方式 (安装时间5至15分钟) \033[0m[A/B]，(默认A)： "
@@ -388,7 +398,7 @@ if [[ $mode == "20" ]]
   wget http://amh.ydidc.top/YD-panel.sh && bash YD-panel.sh gcc 2>&1 | tee YD-panel.log >/dev/null 2>&1
   fi
 fi
-if [[ $mode == "21" ]] 
+if [[ $mode == "23" ]] 
     then
     echo -e "安装类型：\033[36m一键AMH5.3 懒人版极速安装\033[0m" ; 
 	echo -n -e "请确认使用\033[32m 懒人版-极速免编译安装方式 (安装时间1至3分钟) \033[0m还是\033[31m 懒人版-编译安装方式 (安装时间5至15分钟) \033[0m[A/B]，(默认A)： "
