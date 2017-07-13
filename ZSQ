@@ -2,7 +2,7 @@
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 clear
-#rm -rf squid
+rm -rf ZSQ
 # Logo	******************************************************************
 CopyrightLogo='
 \033[36m
@@ -73,6 +73,7 @@ mv /root/squid.conf /etc/squid/squid.conf
 rm -rf /root/squid.conf
 cd /etc/squid/
 sed -i "s/^http_port.*/http_port $PORT/g" squid.conf >/dev/null 2>&1
+sed 's/xiaoyu/$USER/g' squid.conf
 chmod 0755 squid.conf
 MYIP=`wget http://members.3322.org/dyndns/getip -O - -q ; echo`; >/dev/null 2>&1
 echo "提示new passwrod,请输入SQUID密码"
