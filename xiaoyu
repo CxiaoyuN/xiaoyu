@@ -69,7 +69,8 @@ echo -e
 echo -e "\033[0;1;35m                  1.小羽专用SSR控制板                            【6-7.x系统】   \033[0m"
 echo -e "\033[0;1;35m                  2.小羽专用OPENVPN                              【7.x系统】     \033[0m"
 echo -e "\033[0;1;35m                  3.小羽SSR多功能版                              【6-7.x系统】   \033[0m"      
-echo -e "\033[0;1;35m                  4.小羽破解综合                                 【7.x系统】     \033[0m"                
+echo -e "\033[0;1;35m                  4.小羽破解综合                                 【7.x系统】     \033[0m"
+echo -e "\033[0;1;35m                  5.小羽SSR-WEB版                                【7.x系统】     \033[0m"                  
 echo -e "\033[0;1;35m                  6.小羽SS-panel简易版                           【7.x系统】     \033[0m"      
 echo -e "\033[0;1;35m                  7.小羽SSR-panel v2魔改版                       【7.x系统】     \033[0m" 
 echo -e "\033[0;1;35m                  8.小羽SSR-panel v3魔改版                       【7.x系统】     \033[0m" 
@@ -84,7 +85,7 @@ echo -e "\033[0;1;31m                  12.CentOS升级Python 3.6                
 echo -e "\033[0;1;31m                  13.小羽锐速一键安装脚本（加速）                【6-7.x系统】     \033[0m"
 echo -e "\033[0;1;31m                  14.小羽BBR加速一键安装包（加速）               【6-7.x系统】     \033[0m"
 echo -e "\033[0;1;31m                  15.小羽LotServer一键安装脚本（加速）           【6-7.x系统】     \033[0m"
-echo -e "\033[0;1;31m                  16.kcptun加速ss/ssr（不支持ssr云免）           【6-7.x系统】     \033[0m"
+echo -e "\033[0;1;31m                  16.Kcptun加速                                  【6-7.x系统】     \033[0m"
 echo -e "\033[0;1;31m                  17.小羽ADbyby一键安装脚本                      【6-7.x系统】     \033[0m"
 echo -e "\033[0;1;31m                  18.小羽Cloud Torrent一键安装脚本               【6-7.x系统】     \033[0m"
 echo -e "\033[0;1;31m                  19.LNMP一键安装脚本1.4(linux系统配置建站环境)                   \033[0m"
@@ -153,6 +154,15 @@ echo -e "安装类型：\033[36m小羽破解综合\033[0m" ;
 wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyu/raw/master/XYZH >/dev/null 2>&1
 chmod 777 XYZH 
 ./XYZH
+fi
+
+
+if [[ $mode == "5" ]]     
+then
+echo -e "安装类型：\033[36m小羽SSR-WEB版\033[0m" ;  
+wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyussr/raw/master/ssr-web_install.sh >/dev/null 2>&1
+chmod 777 ssr-web_install.sh
+bash ssr-web_install.sh
 fi
 
 
