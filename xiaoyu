@@ -18,7 +18,7 @@ CopyrightLogo='
 ==============================================================
                  欢迎使用小羽云控综合版  				  
                  年少不轻狂、枉为少年郎
-                  QQ交流群 2453223958
+                  QQ交流群 600573662
                    Powered 小羽 2017  	
                   All Rights Reserved  
                                   By:小羽  
@@ -303,12 +303,28 @@ wget --no-check-certificate -qO /tmp/appex.sh "https://raw.githubusercontent.com
 fi
 
 
-if [[ $mode == "16" ]]     
-then
-echo -e "安装类型：\033[36kcptun加速ss/ssr（不支持ssr云免）\033[0m" ;  
-wget –no-check-certificate https://github.com/kuoruan/shell-scripts/raw/master/kcptun/kcptun.sh >/dev/null 2>&1
-chmod 777 kcptun.sh
-bash kcptun.sh
+if [[ $mode == "16" ]] 
+    then
+    echo -e "安装类型：\033[36mKcptun加速\033[0m" ; 
+	echo -n -e "请确认使用\033[32m Kcptun和SS/SSR \033[0m还是\033[31m 仅仅Kcptun \033[0m[A/B]，(默认A)： "
+  read yuan
+  if [[ $yuan == "A" ]]
+  then
+  echo
+  echo -e "安装类型：\033[32m Kcptun和SS/SSR \033[0m" ;
+  echo "已选择Kcptun和SS/SSR"
+  wget https://raw.githubusercontent.com/CxiaoyuN/xiaoyu/master/kcptun_for_ss_ssr-install.sh >/dev/null 2>&1
+  chmod 777 kcptun_for_ss_ssr-install.sh
+  bash kcptun_for_ss_ssr-install.sh
+  fi
+  if [[ $yuan == "B" ]]
+  then
+  echo -e "安装类型：\033[32m 仅仅Kcptun \033[0m" ;
+  echo "已选择仅仅Kcptun"
+  wget –no-check-certificate https://github.com/kuoruan/shell-scripts/raw/master/kcptun/kcptun.sh >/dev/null 2>&1
+  chmod 777 kcptun.sh
+  bash kcptun.sh
+  fi
 fi
 
 
