@@ -140,15 +140,12 @@ bash vpns.sh
 fi
 
 
-if [[ $mode == "7" ]] 
-then
-
-
 
 if [[ $mode == "8" ]] 
 then
 echo -e "安装类型：\033[36m小白破解综合\033[0m" ;  
 wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyu/raw/master/xbc >/dev/null 2>&1
+chmod 777 xbc
 bash xbc
 fi
 
