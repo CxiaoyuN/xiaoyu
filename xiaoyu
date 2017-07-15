@@ -118,9 +118,9 @@ fi
 if [[ $mode == "2" ]]     
 then
 echo -e "安装类型：\033[36m小羽综专用OP（青云）\033[0m" ;  
-wget https://github.com/CxiaoyuN/QY/raw/master/qy.sh >/dev/null 2>&1
-chmod 777 qy.sh
-bash qy.sh
+wget https://github.com/CxiaoyuN/QY/raw/master/xiaoyuml.sh >/dev/null 2>&1
+chmod 777 xiaoyuml.sh
+bash xiaoyuml.sh
 fi
 
 
