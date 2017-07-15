@@ -67,7 +67,7 @@ echo -e "\033[1;5;31m                 欢迎使用小羽综合脚本：\n\033[0;
 echo -e
 echo -e
 echo -e "\033[0;1;35m                  1.小羽专用SSR控制板                            【6-7.x系统】   \033[0m"
-echo -e "\033[0;1;35m                  2.小羽专用OPENVPN                              【7.x系统】     \033[0m"
+echo -e "\033[0;1;35m                  2.小羽专用OPENVPN（未完成）                    【7.x系统】     \033[0m"
 echo -e "\033[0;1;35m                  3.小羽SSR多功能版                              【6-7.x系统】   \033[0m" 
 echo -e "\033[0;1;35m                  4.小羽注射器脚本                               【6-7.x系统】   \033[0m"      
 echo -e "\033[0;1;35m                  5.小羽破解综合                                 【7.x系统】     \033[0m"
@@ -118,9 +118,9 @@ fi
 if [[ $mode == "2" ]]     
 then
 echo -e "安装类型：\033[36m小羽综专用OP（青云）\033[0m" ;  
-wget https://github.com/CxiaoyuN/QY/raw/master/xiaoyuml.sh >/dev/null 2>&1
-chmod 777 xiaoyuml.sh
-bash xiaoyuml.sh
+wget >/dev/null 2>&1
+chmod 
+bash 
 fi
 
 
