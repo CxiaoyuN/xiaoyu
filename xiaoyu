@@ -115,14 +115,29 @@ bash XYSSR.sh
 fi
 
 
-if [[ $mode == "2" ]]     
-then
-echo -e "安装类型：\033[36m小羽综专用OP\033[0m" ;  
-wget https://raw.githubusercontent.com/CxiaoyuN/xiaoyu-op/master/xiaoyuml.sh >/dev/null 2>&1
-chmod xiaoyuml.sh
-bash xiaoyuml.sh
+if [[ $mode == "2" ]] 
+    then
+    echo -e "安装类型：\033[36m小羽专用OP\033[0m" ; 
+	echo -n -e "请确认使用\033[32m 小羽OP版ONE \033[0m还是\033[31m 小羽OP版TWO \033[0m[1/2]，(默认1)： "
+  read yuan
+  if [[ $yuan == "1" ]]
+  then
+  echo
+  echo -e "安装类型：\033[32m 小羽OP版ONE \033[0m" ;
+  echo "已选择小羽OP版ONE"
+  wget https://raw.githubusercontent.com/CxiaoyuN/xiaoyu-op/master/xiaoyuml.sh >/dev/null 2>&1
+  chmod 777 xiaoyuml.sh
+  bash xiaoyuml.sh
+  fi
+  if [[ $yuan == "2" ]]
+  then
+  echo -e "安装类型：\033[32m 小羽OP版TWO \033[0m" ;
+  echo "已选择小羽OP版TWO"
+  wget https://raw.githubusercontent.com/CxiaoyuN/xiaoyu-op-two/master/xiaoyuml2 >/dev/null 2>&1
+  chmod 777 xiaoyuml2
+  bash xiaoyuml2
+  fi
 fi
-
 
 if [[ $mode == "3" ]] 
     then
