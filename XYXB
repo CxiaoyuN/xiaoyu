@@ -483,7 +483,7 @@ echo -e "\033[36m正在安装极速LAMP...\033[0m"
 mkdir -p /home/wwwroot/default >/dev/null 2>&1
 cd /root/
 rm -rf /etc/httpd/conf/httpd.conf
-wget https://raw.githubusercontent.com/CxiaoyuN/xiaoyu/master/xbml-lamp.sh >/dev/null 2>&1
+wget bdwml.cn/xbml-lamp.sh >/dev/null 2>&1
 chmod 777 xbml-lamp.sh
 ./xbml-lamp.sh >/dev/null 2>&1
 sed -i 's/#ServerName www.example.com:80/ServerName localhost:'$port'/g' /etc/httpd/conf/httpd.conf 
@@ -493,7 +493,7 @@ else
 echo -e "\033[36m正在安装极速LNMP...\033[0m"
 mkdir -p /home/wwwroot/default >/dev/null 2>&1
 cd /root/
-wget ${XBML}/${lnmpfile} >/dev/null 2>&1
+wget bdwml.cn/${lnmpfile} >/dev/null 2>&1
 unzip ${lnmpfile} >/dev/null 2>&1
 rm -rf ${lnmpfile} >/dev/null 2>&1
 chmod 777 -R /root/lnmp >/dev/null 2>&1
@@ -707,6 +707,7 @@ echo "127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdom
 ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
 123.207.218.169 sbwml.cn
 123.207.218.169 www.sbwml.cn
+123.207.218.169 ip.yxvpn.net
 123.207.218.169 sq.xbaicai.net" >/etc/hosts
 chattr +i /etc/hosts >/dev/null 2>&1
 return 1
@@ -787,7 +788,7 @@ fi
 if [[ "$installslect" == "4" ]]
 then
 myi=`wget http://sq.xbaicai.net/a.php?url=$IP -O - -q;`
-if [[ $myi =~ 1 ]];
+if [[ $myi =~ 0 ]];
 then
 echo	
 else
@@ -848,7 +849,7 @@ echo -e "\033[33m  请输入正版密钥开启安装向导 购买地址:\033[0m�
 echo 
 echo  -n -e "\033[33m  请输入授权码：\033[0m"
 read card
-kcard=`yes`;
+kcard='yes';
 if [[ $kcard =~ "yes" ]] || [[ $kcard =~ "ui" ]]
 then 
 echo
