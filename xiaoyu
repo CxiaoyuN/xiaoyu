@@ -68,7 +68,7 @@ echo -e
 echo -e
 echo -e "\033[0;1;35m                  1.小羽专用SSR控制板                            【6-7.x系统】   \033[0m"
 echo -e "\033[0;1;35m                  2.小羽专用OPENVPN                              【7.x系统】     \033[0m"
-echo -e "\033[0;1;35m                  3.小羽SSR多功能版                              【6-7.x系统】   \033[0m" 
+echo -e "\033[0;1;35m                  3.小羽SSR多功能版（推荐）                      【6-7.x系统】   \033[0m" 
 echo -e "\033[0;1;35m                  4.小羽注射器脚本                               【6-7.x系统】   \033[0m"      
 echo -e "\033[0;1;35m                  5.小羽破解综合                                 【7.x系统】     \033[0m"
 echo -e "\033[0;1;35m                  6.小羽SSR-WEB版                                【7.x系统】     \033[0m"                  
@@ -149,17 +149,17 @@ if [[ $mode == "3" ]]
   echo
   echo -e "安装类型：\033[32m 小羽SSR多功能版脚本（有二维码） \033[0m" ;
   echo "已选择小羽SSR多功能版脚本（有二维码）"
-  wget -N --no-check-certificate https://raw.githubusercontent.com/CxiaoyuN/xiaoyussr/master/doubssr.sh >/dev/null 2>&1
-  chmod 777 doubssr.sh
-  bash doubssr.sh
+  wget -O ssr.sh https://raw.githubusercontent.com/CxiaoyuN/xiaoyussr/master/dbssr.sh >/dev/null 2>&1
+  chmod 777 ssr.sh
+  bash ssr.sh
   fi
   if [[ $yuan == "X" ]]
   then
   echo -e "安装类型：\033[32m 小羽SSR多功能版脚本（无二维码） \033[0m" ;
   echo "已选择小羽SSR多功能版脚本（无二维码）"
-  wget -N --no-check-certificate https://raw.githubusercontent.com/CxiaoyuN/xiaoyussr/master/xydoubssr.sh >/dev/null 2>&1
-  chmod 777 xydoubssr.sh
-  bash xydoubssr.sh
+  wget -O ssr.sh https://raw.githubusercontent.com/CxiaoyuN/xiaoyussr/master/xydbssr.sh >/dev/null 2>&1
+  chmod 777 ssr.sh
+  bash ssr.sh
   fi
 fi
 
