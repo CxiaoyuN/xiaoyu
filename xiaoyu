@@ -81,14 +81,15 @@ echo -e "\033[0;1;35m                 11.一键安装Resilio Sync搭建私有云
 
 #echo
 echo -e "\033[0;1;31m                     小工具搭建脚本:                                              \033[0m"
-echo -e "\033[0;1;31m                 12.CentOS升级Python 3.6                         【6-7.x系统】     \033[0m" 
-echo -e "\033[0;1;31m                 13.小羽锐速一键安装脚本（加速）                 【6-7.x系统】     \033[0m"
-echo -e "\033[0;1;31m                 14.小羽BBR加速一键安装包（加速）                【6-7.x系统】     \033[0m"
-echo -e "\033[0;1;31m                 15.小羽LotServer一键安装脚本（加速）            【6-7.x系统】     \033[0m"
-echo -e "\033[0;1;31m                 16.Kcptun加速                                   【6-7.x系统】     \033[0m"
-echo -e "\033[0;1;31m                 17.小羽ADbyby一键安装脚本                       【6-7.x系统】     \033[0m"
-echo -e "\033[0;1;31m                 18.小羽Cloud Torrent一键安装脚本                【6-7.x系统】     \033[0m"
-echo -e "\033[0;1;31m                 19.LNMP一键安装脚本1.4(linux系统配置建站环境)                   \033[0m"
+echo -e "\033[0;1;31m                 12.CentOS升级Python 3.6                         【6-7.x系统】    \033[0m" 
+echo -e "\033[0;1;31m                 13.小羽锐速一键安装脚本（加速）                 【6-7.x系统】    \033[0m"
+echo -e "\033[0;1;31m                 14.小羽BBR加速一键安装包（加速）                【6-7.x系统】    \033[0m"
+echo -e "\033[0;1;31m                 15.小羽LotServer一键安装脚本（加速）            【6-7.x系统】    \033[0m"
+echo -e "\033[0;1;31m                 16.Kcptun加速                                   【6-7.x系统】    \033[0m"
+echo -e "\033[0;1;31m                 17.小羽ADbyby一键安装脚本                       【6-7.x系统】    \033[0m"
+echo -e "\033[0;1;31m                 18.小羽Cloud Torrent一键安装脚本                【6-7.x系统】    \033[0m"
+echo -e "\033[0;1;31m                 19.LNMP一键安装脚本1.4(linux系统配置建站环境)                    \033[0m"
+echo -e "\033[0;1;31m                 cs.91云博客测试服务器一键脚本                                    \033[0m"
 
 
 #echo
@@ -377,6 +378,15 @@ echo -e "安装类型：\033[36mlnmp1.4一键安装脚本\033[0m" ;
 yum install -y unzip zip
 wget -c https://github.com/CxiaoyuN/xiaoyu/raw/master/lnmp1.4.zip && unzip lnmp1.4.zip && cd lnmp1.4 && chmod +x install.sh && ./install.sh lnmp
 fi
+
+
+if [[ $mode == "cs" ]] 
+then
+echo -e "安装类型：\033[36m91云博客测试服务器一键脚本\033[0m" ; 
+wget -N --no-check-certificate https://raw.githubusercontent.com/91yun/91yuntest/master/test.sh
+bash test.sh -i "io,bandwidth,download,traceroute,backtraceroute,allping,gotoping"
+fi
+
 
 if [[ $mode == "20" ]] 
 then
