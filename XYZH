@@ -67,9 +67,9 @@ echo -e "\033[1;5;31m               欢迎使用小羽破解综合脚本：\n\03
 echo
 echo -e "\033[0;1;31m                  一、7.X系统免流破解脚本                                       \033[0m"
 echo -e "\033[0;1;31m                  1.小羽小白版                                  【7.x系统】     \033[0m"
-echo -e "\033[0;1;31m                  2.小羽FAS1.6破解版（不要选择对接流量卫士）    【7.x系统】     \033[0m"
+echo -e "\033[0;1;31m                  2.小羽FAS2.0破解版（不要选择对接流量卫士）    【7.x系统】     \033[0m"
 echo -e "\033[0;1;31m                  3.小羽SBW破解                                 【7.x系统】     \033[0m" 
-echo -e "\033[0;1;31m                  4.小羽快云3期破解版                           【7.x系统】     \033[0m"
+echo -e "\033[0;1;31m                  4.小羽vnser流控（简易版）                     【7.x系统】     \033[0m"
 echo -e "\033[0;1;31m                  5.小羽大猫7Pro流控版本                        【7.x系统】     \033[0m" 
 echo -e "\033[0;1;31m                  6.小羽VPNS3.8流控版本                         【7.x系统】     \033[0m"
 echo -e "\033[0;1;31m                  7.小羽HTML2.1流控版本                         【7.x系统】     \033[0m"
@@ -116,25 +116,24 @@ fi
 if [[ $mode == "4" ]] 
 then
 echo -e "安装类型：\033[36m小羽快云3期破解版（完美版）\033[0m" ; 
-wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyu/raw/master/KY3 >/dev/null 2>&1
-chmod 777 KY3
-./KY3
+wget https://github.com/CxiaoyuN/xiaoyu/raw/master/vnser.sh >/dev/null 2>&1
+bash vnser.sh
 fi
 
 
 if [[ $mode == "5" ]] 
 then
-echo -e "安装类型：\033[36m小羽大猫7Pro\033[0m" ;  
-wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyu/raw/master/XYDM >/dev/null 2>&1
+echo -e "安装类型：\033[36m小羽大猫K8\033[0m" ;  
+wget https://github.com/CxiaoyuN/xiaoyu/raw/master/XYDM >/dev/null 2>&1
 chmod 777 XYDM
-bash XYDM
+./XYDM
 fi
 
 
 if [[ $mode == "6" ]] 
 then
 echo -e "安装类型：\033[36m小羽VPNS3.8\033[0m" ;  
-wget https://raw.githubusercontent.com/CxiaoyuN/VPNS/master/vpns.sh >/dev/null 2>&1
+wget https://github.com/CxiaoyuN/xiaoyu/raw/master/vpns.sh >/dev/null 2>&1
 chmod 777 vpns.sh
 bash vpns.sh
 fi
