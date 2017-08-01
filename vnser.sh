@@ -78,7 +78,7 @@ if [ ! -d "${APP_PATH}openssl" ] ;then
 	cd ${APP_PATH}
 	echo -e "\n\033[35m正在安装openssl,请稍等(1-3分钟)...\033[0m"
 	rm -rf /usr/bin/pod2man 
-	wget http://git.oschina.net/xiaoyutwo/xiaoyu/raw/Vnser/openssl-1.0.0e.tar.gz  >/dev/null 2>&1
+	wget https://coding.net/u/xiao-yu/p/Vnser/git/raw/master/openssl-1.0.0e.tar.gz  >/dev/null 2>&1
 	tar -xvzf openssl-1.0.0e.tar.gz  >/dev/null 2>&1
 	cd openssl-1.0.0e
 	./config --prefix=/usr/local/openssl  >/dev/null 2>&1
@@ -91,7 +91,7 @@ echo -e "\n\033[31m openssl安装成功 \033[0m"
 #安装lzo
 cd ${APP_PATH}
 echo -e "\n\033[35m正在安装lzo,请稍等(1-3分钟)...\033[0m"
-wget http://git.oschina.net/xiaoyutwo/xiaoyu/raw/Vnser/lzo-2.03.tar.gz  >/dev/null 2>&1
+wget https://coding.net/u/xiao-yu/p/Vnser/git/raw/master/lzo-2.03.tar.gz  >/dev/null 2>&1
 tar -xvzf lzo-2.03.tar.gz  >/dev/null 2>&1
 cd lzo-2.03
 ./configure --prefix=/usr/local  >/dev/null 2>&1
@@ -106,19 +106,19 @@ if [ ! -d "${APP_PATH}openvpn" ] ;then
 	#下载mproxy转接代理
 	echo -e "\n\033[33m正在编译mproxy、http转接代理...\033[0m"
 	cd ~
-	wget http://git.oschina.net/xiaoyutwo/xiaoyu/raw/Vnser/mproxy.c &> /dev/null
+	wget https://coding.net/u/xiao-yu/p/Vnser/git/raw/master/mproxy.c &> /dev/null
 	gcc -o mproxy mproxy.c
 	chmod 777 ./mproxy &> /dev/null
 	
 	echo -e '\n\033[36m正在编译安装openvpn,请稍等(大概需要20-30秒)...\033[0m'
 	cd ${APP_PATH}
-	wget http://git.oschina.net/xiaoyutwo/xiaoyu/raw/Vnser/openvpn-2.3.12.tar.gz  >/dev/null 2>&1
+	wget https://coding.net/u/xiao-yu/p/Vnser/git/raw/master/openvpn-2.3.12.tar.gz  >/dev/null 2>&1
 	tar -xvzf openvpn-2.3.12.tar.gz  >/dev/null 2>&1
 	cd openvpn-2.3.12
 	./configure --prefix=/usr/local/openvpn  >/dev/null 2>&1
 	 make install >/dev/null 2>&1
 	#安装easy-rsa文件
-	wget http://git.oschina.net/xiaoyutwo/xiaoyu/raw/Vnser/easy-rsa.zip  >/dev/null 2>&1
+	wget https://coding.net/u/xiao-yu/p/Vnser/git/raw/master/easy-rsa.zip  >/dev/null 2>&1
 	unzip easy-rsa.zip -d easy-rsa &> /dev/null
 	cd ./easy-rsa
 	chmod 777 *
@@ -210,14 +210,14 @@ echo -e "\n\033[31m Openvpn配置成功 \033[0m"
 	#创建开启扣流量钩子
 	mkdir -p ${APP_PATH}openvpn/hook
 	cd ${APP_PATH}openvpn/hook
-	wget http://git.oschina.net/xiaoyutwo/xiaoyu/raw/Vnser/hook.zip &> /dev/null
+	wget https://coding.net/u/xiao-yu/p/Vnser/git/raw/master/hook.zip &> /dev/null
 	unzip hook.zip  &> /dev/null
 	chmod 777 *
 	mkdir -p ${APP_PATH}openvpn/log
 	
 	
 	#下载重启文件
-	wget http://git.oschina.net/xiaoyutwo/xiaoyu/raw/Vnser/vnser &> /dev/null
+	wget https://coding.net/u/xiao-yu/p/Vnser/git/raw/master/vnser &> /dev/null
 	chmod 777 ./vnser &> /dev/null
 	mv ./vnser /usr/bin/vnser
 	if [ -z "`sed -n '/\/usr\/bin\/vnser/p' /etc/rc.local`" ];then
@@ -238,7 +238,7 @@ echo -e "\n\033[31m Openvpn配置成功 \033[0m"
 		sleep 5
 		cd /root
 		#wget "pan.vnscml.cn/ini_hook" && bash ini_hook
-		wget http://git.oschina.net/xiaoyutwo/xiaoyu/raw/Vnser/install.zip &> /dev/null
+		wget https://coding.net/u/xiao-yu/p/Vnser/git/raw/master/install.zip &> /dev/null
 		unzip install -d install &> /dev/null
 		cd ./install
 		chmod -R 777 ./
@@ -311,7 +311,7 @@ echo -e "\n\033[31m Openvpn配置成功 \033[0m"
 		echo -e '\n\033[33m正在部署流控文件,请稍等(很快的客官)...\033[0m'
 		cd /var/www/html
 	
-		wget http://git.oschina.net/xiaoyutwo/xiaoyu/raw/Vnser/vnser_lk.zip &> /dev/null
+		wget https://coding.net/u/xiao-yu/p/Vnser/git/raw/master/vnser_lk.zip &> /dev/null
 		unzip vnser_lk.zip &> /dev/null
 		chmod -R 777 ./
 		#替换数据文件
@@ -344,9 +344,9 @@ echo -e "\n\033[31m Openvpn配置成功 \033[0m"
 流控后台管理地址：http://${server_ip}:${nginx_port}/admin
 线路管理地址：http://${server_ip}:${nginx_port}/@vnser/smhoud.php
 后台管理账户：admin 密码：${admin_pass}
-APP:http://git.oschina.net/xiaoyutwo/xiaoyu/raw/Vnser/vnser.apk
-MT管理器:http://git.oschina.net/xiaoyutwo/xiaoyu/raw/Vnser/MT.apk
-对接教程：http://git.oschina.net/xiaoyutwo/xiaoyu/raw/Vnser/readme.txt
+APP:https://coding.net/u/xiao-yu/p/Vnser/git/raw/master/vnser.apk
+MT管理器:https://coding.net/u/xiao-yu/p/Vnser/git/raw/master/MT.apk
+对接教程：https://coding.net/u/xiao-yu/p/Vnser/git/raw/master/readme.txt
 APP对接URL：http://${server_ip}:${nginx_port}/zsllb/api.php
 APP对接公告URL：http://${server_ip}:${nginx_port}/admin/gonggao.php
 数据库密码: ${mysql_pass}

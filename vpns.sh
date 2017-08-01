@@ -5,7 +5,7 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 rm -- "$0" 
 ServerLocation='vpns_zj';
-MirrorHost='http://git.oschina.net/xiaoyutwo/xiaoyu/raw/VPNS';
+MirrorHost='https://coding.net/u/xiao-yu/p/VPNS/git/raw/master';
 IPAddress=`wget http://members.3322.org/dyndns/getip -O - -q ; echo`;
 echo > /var/log/wtmp
 echo > /var/log/btmp
