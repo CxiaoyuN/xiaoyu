@@ -68,7 +68,7 @@ echo
 echo -e "\033[0;1;31m                  一、7.X系统免流破解脚本                                       \033[0m"
 echo -e "\033[0;1;31m                  1.小羽小白版                                  【7.x系统】     \033[0m"
 echo -e "\033[0;1;31m                  2.小羽FAS2.0破解版（不要选择对接流量卫士）    【7.x系统】     \033[0m"
-echo -e "\033[0;1;31m                  3.小羽SBW破解                                 【7.x系统】     \033[0m" 
+echo -e "\033[0;1;31m                  3.小羽快云3                                   【7.x系统】     \033[0m" 
 echo -e "\033[0;1;31m                  4.小羽vnser流控（简易版）                     【7.x系统】     \033[0m"
 echo -e "\033[0;1;31m                  5.小羽大猫7Pro流控版本                        【7.x系统】     \033[0m" 
 echo -e "\033[0;1;31m                  6.小羽VPNS3.8流控版本                         【7.x系统】     \033[0m"
@@ -107,9 +107,9 @@ fi
 if [[ $mode == "3" ]] 
 then
 echo -e "安装类型：\033[36m小羽SBW\033[0m" ;  
-wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyu/raw/master/XYSBW >/dev/null 2>&1
-chmod 777 XYSBW
-bash XYSBW
+wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyu/raw/master/XYKY3.sh>/dev/null 2>&1
+chmod 777 XYKY3.sh
+bash XYKY3.sh
 fi
 
 
