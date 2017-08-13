@@ -67,8 +67,9 @@ echo -e "\033[1;5;31m                 欢迎使用小羽综合脚本：\n\033[0;
 echo -e
 echo -e
 echo -e "\033[0;1;35m                  1.小羽专用SSR控制板                            【6-7.x系统】   \033[0m"
+echo -e "\033[0;1;35m                  0.小羽SSR多功能版（多用户可控）                【6-7.x系统】   \033[0m" 
 echo -e "\033[0;1;35m                  2.小羽专用OPENVPN                              【7.x系统】     \033[0m"
-echo -e "\033[0;1;35m                  3.小羽SSR多功能版（推荐）                      【6-7.x系统】   \033[0m" 
+echo -e "\033[0;1;35m                  3.小羽SSR多功能版（单用户）                    【6-7.x系统】   \033[0m" 
 echo -e "\033[0;1;35m                  4.小羽注射器脚本                               【6-7.x系统】   \033[0m"      
 echo -e "\033[0;1;35m                  5.小羽破解综合                                 【7.x系统】     \033[0m"
 echo -e "\033[0;1;35m                  6.小羽SSR-WEB版                                【7.x系统】     \033[0m"                  
@@ -112,6 +113,40 @@ echo -e "安装类型：\033[36m小羽专用SSR控制版\033[0m" ;
 wget -O ssr.sh https://github.com/CxiaoyuN/xiaoyussr/raw/master/XYSSR.sh >/dev/null 2>&1
 chmod 777 ssr.sh
 bash ssr.sh
+fi
+
+
+if [[ $mode == "0" ]] 
+    then
+    echo -e "安装类型：\033[36m小羽SSR多功能版脚本说明: ShadowsocksR MudbJSON模式多用户一键脚本 支持流量限制等\033[0m" ; 
+	echo -n -e "请确认使用\033[32m 小羽SSR多功能版脚本有二维码 \033[0m还是\033[31m 小羽SSR多功能版脚本无二维码 \033[0m[D/X]，(默认X)： "
+  read yuan
+  if [[ $yuan == "D" ]]
+  then
+  echo
+  echo -e "安装类型：\033[32m 小羽SSR多功能版脚本（有二维码） \033[0m" ;
+  echo "已选择小羽SSR多功能版脚本（有二维码）"
+  wget -O ssr.sh https://raw.githubusercontent.com/CxiaoyuN/xiaoyussr/master/dbssrmu.sh >/dev/null 2>&1
+  chmod 777 ssr.sh
+  bash ssr.sh
+  fi
+  if [[ $yuan == "X" ]]
+  then
+  echo -e "安装类型：\033[32m 小羽SSR多功能版脚本（无二维码） \033[0m" ;
+  echo "已选择小羽SSR多功能版脚本（无二维码）"
+  wget -O ssr.sh https://raw.githubusercontent.com/CxiaoyuN/xiaoyussr/master/xyssrmu.sh >/dev/null 2>&1
+  chmod 777 ssr.sh
+  bash ssr.sh
+  fi
+fi
+
+
+if [[ $mode == "4" ]] 
+then
+echo -e "安装类型：\033[36m小羽破解综合\033[0m" ;
+wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyu/raw/master/ZSQ >/dev/null 2>&1
+chmod 777 ZSQ 
+./ZSQ
 fi
 
 
@@ -315,9 +350,9 @@ if [[ $mode == "14" ]]
   then
   echo -e "安装类型：\033[32m BBR魔改版加速一键安装包 \033[0m" ;
   echo "已选择BBR魔改版加速一键安装包"
-  wget https://raw.githubusercontent.com/CxiaoyuN/xiaoyu/master/bbr-mod.sh>/dev/null 2>&1
-  chmod 777 bbr-mod.sh
-  bash bbr-mod.sh
+  wget https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/bbr.sh>/dev/null 2>&1
+  chmod 777 bbr.sh
+  bash bbr.sh
   fi
 fi
 
