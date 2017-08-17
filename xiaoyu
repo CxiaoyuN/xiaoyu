@@ -126,17 +126,17 @@ if [[ $mode == "0" ]]
   echo
   echo -e "安装类型：\033[32m 小羽SSR多功能版脚本（有二维码） \033[0m" ;
   echo "已选择小羽SSR多功能版脚本（有二维码）"
-  wget -O ssr.sh https://raw.githubusercontent.com/CxiaoyuN/xiaoyussr/master/dbssrmu.sh >/dev/null 2>&1
-  chmod 777 ssr.sh
-  bash ssr.sh
+  wget -O ssrmu.sh https://raw.githubusercontent.com/CxiaoyuN/xiaoyussr/master/dbssrmu.sh >/dev/null 2>&1
+  chmod 777 ssrmu.sh
+  bash ssrmu.sh
   fi
   if [[ $yuan == "X" ]]
   then
   echo -e "安装类型：\033[32m 小羽SSR多功能版脚本（无二维码） \033[0m" ;
   echo "已选择小羽SSR多功能版脚本（无二维码）"
-  wget -O ssr.sh https://raw.githubusercontent.com/CxiaoyuN/xiaoyussr/master/xyssrmu.sh >/dev/null 2>&1
-  chmod 777 ssr.sh
-  bash ssr.sh
+  wget -O ssrmu.sh https://raw.githubusercontent.com/CxiaoyuN/xiaoyussr/master/xyssrmu.sh >/dev/null 2>&1
+  chmod 777 ssrmu.sh
+  bash ssrmu.sh
   fi
 fi
 
