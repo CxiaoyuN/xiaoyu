@@ -9,7 +9,7 @@ chattr -a /root    >/dev/null 2>&1
 chattr -a /tmp     >/dev/null 2>&1
 chattr -a /etc     >/dev/null 2>&1
 chattr -a /usr/bin >/dev/null 2>&1
-key='xiaoyu66';
+key='小羽云控';
 # ********************************** 脚本开始 **************************** #
 IP=`wget http://www.sbwml.cn/getip -O - -q ; echo`;
 # Logo	******************************************************************
