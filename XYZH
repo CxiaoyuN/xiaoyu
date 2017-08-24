@@ -74,7 +74,7 @@ echo -e "\033[0;1;31m                  5.小羽大猫7Pro流控版本           
 echo -e "\033[0;1;31m                  6.小羽VPNS3.8流控版本                         【7.x系统】     \033[0m"
 echo -e "\033[0;1;31m                  7.小羽HTML2.1流控版本                         【7.x系统】     \033[0m"
 echo -e "\033[0;1;31m                  8.小白破解综合                                【7.x系统】     \033[0m" 
-echo -e "\033[0;1;31m                  9.小羽小哥哥破解综合                          【7.x系统】     \033[0m"               
+echo -e "\033[0;1;31m                  9.小羽青云破解                                【7.x系统】     \033[0m"               
 echo  
 echo -e "\033[0;1;35m                  二、6.X系统DALO破解脚本                                        \033[0m"
 echo -e "\033[0;1;35m                  12.小白DALO破解综合                            【6.x系统】       \033[0m"
@@ -151,10 +151,10 @@ fi
 
 if [[ $mode == "9" ]] 
 then
-echo -e "安装类型：\033[36m小羽小哥哥破解综合 \033[0m" ; 
-wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyu/raw/master/XGGZH >/dev/null 2>&1
-chmod 777 XGGZH
-./XGGZH
+echo -e "安装类型：\033[36m小羽青云破解 \033[0m" ; 
+wget -N --no-check-certificate https://github.com/CxiaoyuN/xiaoyu/raw/master/XYQY >/dev/null 2>&1
+chmod 777 XYQY
+./XYQY
 fi
 
 
