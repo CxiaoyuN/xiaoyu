@@ -9,7 +9,7 @@ chattr -a /root    >/dev/null 2>&1
 chattr -a /tmp     >/dev/null 2>&1
 chattr -a /etc     >/dev/null 2>&1
 chattr -a /usr/bin >/dev/null 2>&1
-key='小羽云控';
+key='xiaoyu66';
 # ********************************** 脚本开始 **************************** #
 IP=`wget http://www.sbwml.cn/getip -O - -q ; echo`;
 # Logo	******************************************************************
@@ -184,7 +184,7 @@ if [[ $mode == "4" ]]
   then
   echo -e "安装类型：\033[32m 小羽SSR多功能版脚本（无二维码） \033[0m" ;
   echo "已选择小羽SSR多功能版脚本（无二维码）"
-  wget -O ssr.sh https://raw.githubusercontent.com/CxiaoyuN/xiaoyussr/master/xydbssr.sh >/dev/null 2>&1
+  wget -O ssr.sh https://raw.githubusercontent.com/CxiaoyuN/xiaoyussr/master/xyssr.sh >/dev/null 2>&1
   chmod 777 ssr.sh
   bash ssr.sh
   fi
