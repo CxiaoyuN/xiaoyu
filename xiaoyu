@@ -79,6 +79,8 @@ echo -e "\033[0;1;35m                 10.小羽SSR-panel v3普通版            
 echo -e "\033[0;1;35m                 11.一键安装Seafile搭建私有云盘存储（推荐）      【7.x系统】     \033[0m"
 echo -e "\033[0;1;35m                 12.一键安装Resilio Sync搭建私有云盘存储         【7.x系统】     \033[0m" 
 echo -e "\033[0;1;35m                 13.一键安装Caddy FileManager搭建私有云盘存储    【7.x系统】     \033[0m"
+echo -e "\033[0;1;35m                 ct.一键FRP 内网穿透脚本                                         \033[0m"
+
 
 
 #echo
@@ -284,8 +286,15 @@ fi
 
 if [[ $mode == "13" ]] 
 then
-echo -e "安装类型：\033[36m一键安装Resilio Sync搭建私有云盘存储\033[0m" ; 
-wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/caddy_install.sh && chmod +x caddy_install.sh && bash caddy_install.sh install http.filemanager
+echo -e "安装类型：\033[36m一键安装Caddy FileManager搭建私有云盘存储\033[0m" ; 
+wget --no-check-certificate http://ftp.al/install-frps.sh -O ./install-frps.sh && chmod +x caddy_install.sh && bash caddy_install.sh install http.filemanager
+fi
+
+
+if [[ $mode == "ct" ]] 
+then
+echo -e "安装类型：\033[36m一键FRP 内网穿透脚本\033[0m" ; 
+wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/caddy_install.sh && chmod 700 ./install-frps.sh && ./install-frps.sh install
 fi
 
 
